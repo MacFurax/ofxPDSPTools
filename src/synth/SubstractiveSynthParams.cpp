@@ -7,6 +7,10 @@ SubstractiveSynthParams::SubstractiveSynthParams() : PatchParams()
   AddParam("SYNTH.Filter Cutoff", 180.0f, 0.0f, 180.0f, 100.f); // because filter type is default to LowPass, set cutoff on higher frequencey (pitch)
   AddParam("SYNTH.Filter Reso", 0.0f, 0.0f, 1.0f);
 
+  AddParam("SYNTH.Filter LFO WF", 0.0f, {"sine","triangle", "saw", "square"});
+  AddParam("SYNTH.Filter LFO Freq", 1.0f, 0.0f, 30.0f);
+  AddParam("SYNTH.Filter LFO Amp", 0.0f, 0.0f, 40.0f);
+
 
   AddParam("OSC1.Detune", 0.0f, -12.0f, 12.0f);
   AddParam("OSC1.Fine", 0.0f, -1.0f, 1.0f, 50.f, ParamDesc::Layouts::SameLine);

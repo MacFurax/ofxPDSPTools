@@ -1,15 +1,6 @@
 #include "PatchParams.h"
 
-template <class Container>
-void split(const string& str, Container& cont, char delim)
-{
-	stringstream ss(str);
-	string token;
-	while (getline(ss, token, delim)) {
-		cont.push_back(token);
-	}
-}
-
+// -------------------------------------------------------
 PatchParams::PatchParams()
 {
 	_rootParamGroup = make_shared<ParamGroup>();
@@ -21,14 +12,16 @@ PatchParams::PatchParams()
 	_patchName.set("name", "");
 	_ofParameterRootGroup->add(_patchName);
 	_patchDescription.set("description", "");
-    _ofParameterRootGroup->add(_patchDescription);
+	_ofParameterRootGroup->add(_patchDescription);
 }
 
+// -------------------------------------------------------
 PatchParams::~PatchParams()
 {
 	_paramDescs.clear();
 }
 
+// -------------------------------------------------------
 void PatchParams::AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime, ParamLayouts layout)
 {
 	vector<string> names;
@@ -44,7 +37,7 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 		{
 			// this is the parameter name
 			// add it to group
-			ofLogNotice() << "Parameter name:" << token;
+			//ofLogNotice() << "Parameter name:" << token;
 			shared_ptr<pdsp::Parameter> param = make_shared<pdsp::Parameter>();
 			shared_ptr<ParamDesc> paramDesc = make_shared<ParamDesc>();
 
@@ -62,7 +55,7 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 
 		}
 		else {
-			ofLogNotice() << "Group name:" << token;
+			//ofLogNotice() << "Group name:" << token;
 
 			// check if group already exists in ParamGroup
 			auto pair = lastGroup->getSubGroups().find(token);
@@ -116,18 +109,19 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 	}
 }
 
+// -------------------------------------------------------
 shared_ptr<ofParameterGroup> PatchParams::getOfParameterGroup()
 {
 	return _ofParameterRootGroup;
 }
 
-
-
+// -------------------------------------------------------
 map<string, shared_ptr<ParamGroup>>& ParamGroup::getSubGroups()
 {
 	return _subGroups;
 }
 
+// -------------------------------------------------------
 vector<shared_ptr<ParamDesc>>& ParamGroup::getParams()
 {
 	return _params;

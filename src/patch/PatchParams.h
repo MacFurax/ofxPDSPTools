@@ -5,10 +5,6 @@
 #include "ofxImGui.h"
 #include "ofxXmlSettings.h"
 
-
-template <class Container>
-void split(const string& str, Container& cont, char delim = ' ');
-
 enum class ParamTypes { None, Float, Int, Combo };
 enum class ParamLayouts { NextLine, SameLine };
 

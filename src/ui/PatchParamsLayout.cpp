@@ -75,10 +75,10 @@ shared_ptr<LayoutParam> PatchParamsLayout::AddParam(string label, shared_ptr<Par
 {
   shared_ptr<LayoutParam> newParam = make_shared<LayoutParam>(label, paramDesc);
   
-  if (paramDesc->type == ParamDesc::Combo) {
+  if (paramDesc->type == ParamTypes::Combo) {
 	  newParam->widgetType = LayoutParam::WidgetTypes::Combo;
   }
-  else if (paramDesc->type == ParamDesc::Float)
+  else if (paramDesc->type == ParamTypes::Float)
   {
 	  newParam->widgetType = LayoutParam::WidgetTypes::HFader;
   }

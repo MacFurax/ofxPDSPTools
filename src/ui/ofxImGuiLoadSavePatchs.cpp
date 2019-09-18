@@ -36,70 +36,70 @@ void ofxImGuiLoadSavePatchs::setPatchParams(PatchParams * toSave)
 // ---------------------------------------------------------
 void ofxImGuiLoadSavePatchs::draw()
 {
-	auto mainSettings = ofxImGui::Settings();
+	//auto mainSettings = ofxImGui::Settings();
 
-	ofxImGui::BeginWindow("Patchs", mainSettings, false);
-	if (patchStorage.numFiles() > 0)
-	{
-		if (ofxImGui::VectorCombo("Patchs", &selectedPatch, patchStorage.patcheNames()))
-		{
-			// nothing yet
-		}
-		if (ImGui::Button("Load"))
-		{
-			// load current selected patchs
-			patchStorage.Load(selectedPatch, patchParams->getParameterGroup());
-			strcpy(name, patchParams->name().get().c_str());
-			strcpy(description, patchParams->description().get().c_str());
-		}
-	}
-	else
-	{
-		ImGui::Text("No patches available");
-	}
-	ImGui::SameLine();
-	if (ImGui::Button("Refresh"))
-	{
-		patchStorage.reloadPatchsFileList();
-	}
+	//ofxImGui::BeginWindow("Patchs", mainSettings, false);
+	//if (patchStorage.numFiles() > 0)
+	//{
+	//	if (ofxImGui::VectorCombo("Patchs", &selectedPatch, patchStorage.patcheNames()))
+	//	{
+	//		// nothing yet
+	//	}
+	//	if (ImGui::Button("Load"))
+	//	{
+	//		// load current selected patchs
+	//		patchStorage.Load(selectedPatch, patchParams->getParameterGroup());
+	//		strcpy(name, patchParams->name().get().c_str());
+	//		strcpy(description, patchParams->description().get().c_str());
+	//	}
+	//}
+	//else
+	//{
+	//	ImGui::Text("No patches available");
+	//}
+	//ImGui::SameLine();
+	//if (ImGui::Button("Refresh"))
+	//{
+	//	patchStorage.reloadPatchsFileList();
+	//}
 
-	ImGui::InputText("Name", name, IM_ARRAYSIZE(name));
-	ImGui::InputTextMultiline("Description", description, IM_ARRAYSIZE(description));
-	if (ImGui::Button("Save"))
-	{
-		if (patchStorage.numFiles() > 0)
-		{
-			
-			if (patchParams->name().get() != name)
-			{
-				// name was changed, create a new patch
-				patchParams->name().set(name);
-				patchParams->description().set(description);
-				patchStorage.Save(patchStorage.buildFullFilename(name), patchParams->getParameterGroup());
-				patchStorage.reloadPatchsFileList(); // reload
-				selectPatchByName(name);
-			}
-			else
-			{
-				// name was not changed, override current patch
-				patchParams->name().set(name);
-				patchParams->description().set(description);
-				patchStorage.Save(selectedPatch, patchParams->getParameterGroup());
-			}
-		}
-		else
-		{
-			// create new patch
-			patchParams->name().set(name);
-			patchParams->description().set(description);
-			patchStorage.Save(patchStorage.buildFullFilename(name), patchParams->getParameterGroup());
-			patchStorage.reloadPatchsFileList(); // reload 
-			selectPatchByName(name);
-		}
-	}
+	//ImGui::InputText("Name", name, IM_ARRAYSIZE(name));
+	//ImGui::InputTextMultiline("Description", description, IM_ARRAYSIZE(description));
+	//if (ImGui::Button("Save"))
+	//{
+	//	if (patchStorage.numFiles() > 0)
+	//	{
+	//		
+	//		if (patchParams->name().get() != name)
+	//		{
+	//			// name was changed, create a new patch
+	//			patchParams->name().set(name);
+	//			patchParams->description().set(description);
+	//			patchStorage.Save(patchStorage.buildFullFilename(name), patchParams->getParameterGroup());
+	//			patchStorage.reloadPatchsFileList(); // reload
+	//			selectPatchByName(name);
+	//		}
+	//		else
+	//		{
+	//			// name was not changed, override current patch
+	//			patchParams->name().set(name);
+	//			patchParams->description().set(description);
+	//			patchStorage.Save(selectedPatch, patchParams->getParameterGroup());
+	//		}
+	//	}
+	//	else
+	//	{
+	//		// create new patch
+	//		patchParams->name().set(name);
+	//		patchParams->description().set(description);
+	//		patchStorage.Save(patchStorage.buildFullFilename(name), patchParams->getParameterGroup());
+	//		patchStorage.reloadPatchsFileList(); // reload 
+	//		selectPatchByName(name);
+	//	}
+	//}
 
 
-	ofxImGui::EndWindow(mainSettings);
+	//ofxImGui::EndWindow(mainSettings);
 }
 
 void ofxImGuiLoadSavePatchs::selectPatchByName(string name)

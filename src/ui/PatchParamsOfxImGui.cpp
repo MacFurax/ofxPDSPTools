@@ -22,7 +22,7 @@ void PatchParamsOfxImGui::Draw()
 {
   auto mainSettings = ofxImGui::Settings();
   // create windows and params from PatchParameters
-  for (auto child : pp.childsGroups)
+  /*for (auto child : pp.childsGroups)
   {
     string groupName = child->getName();
     ofxImGui::BeginWindow(groupName, mainSettings, false);
@@ -60,5 +60,5 @@ void PatchParamsOfxImGui::Draw()
       }
     }
     ofxImGui::EndWindow(mainSettings);
-  }
+  }*/
 }

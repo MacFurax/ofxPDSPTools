@@ -7,16 +7,18 @@
 
 
 template <class Container>
-void split2(const std::string& str, Container& cont, char delim = ' ');
+void split(const string& str, Container& cont, char delim = ' ');
+
+enum class ParamTypes { None, Float, Int, Combo };
+enum class ParamLayouts { NextLine, SameLine };
 
 class ParamDesc
 {
 public:
-  enum ParamTypes { None, Float, Int, Combo };
-  enum Layouts    { NextLine, SameLine};
+  
   shared_ptr<pdsp::Parameter> pdspParameter;
   ParamTypes                  type = ParamTypes::None;
-  Layouts                     layout = Layouts::NextLine;
+  ParamLayouts                layout = ParamLayouts::NextLine;
   vector<string>              comboOptions; // if paramType is StringList
 };
 
@@ -24,10 +26,18 @@ public:
 class ParamGroup
 {
 public:
-	
+	ParamGroup() {}
+	~ParamGroup() {
+		_subGroups.clear();
+		_params.clear();
+	}
+
+	map<string, shared_ptr<ParamGroup>> & getSubGroups();
+	vector<shared_ptr<ParamDesc>> & getParams();
 private:
-	std::map<std::string, std::shared_ptr<ParamGroup>> subGroups;
-	std::vector<std::shared_ptr<ParamDesc>> params;
+
+	map<string, shared_ptr<ParamGroup>> _subGroups;
+	vector<shared_ptr<ParamDesc>> _params;
 };
 
 class PatchParams
@@ -37,49 +47,27 @@ public:
   PatchParams();
   ~PatchParams();
 
-  void AddParam(string name, float value, float minValue, float maxValue, float smoothingTime = 50.f, ParamDesc::Layouts layout = ParamDesc::Layouts::NextLine);
-  void AddParam(string name, int value, int minValue, int maxValue);
-  void AddParam(string name, int value, vector<string> values);
 
-  pdsp::Patchable Patch(string name);
 
-  // set param value
-  void Set(string name, int value);
-  void Set(string name, float value);
+  void AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime = 50.f, ParamLayouts layout = ParamLayouts::NextLine);
+  shared_ptr<ParamDesc> getParamDesc(string fullname);
+  shared_ptr<pdsp::Parameter> getPDSPParameter(string fullname);
+  shared_ptr<ofParameterGroup> getOfParameterGroup();
 
-  shared_ptr<ParamDesc>       getParamDesc(string name);
-  shared_ptr<ParamDesc>       getParamDesc(string groupName, string paramName);
-  shared_ptr<pdsp::Parameter> getPDSPParameter(string name);
-  ofParameter<float>&         getOfParameterFloat(string name);
-  ofParameter<int>&           getOfParameterInt(string name);
 
-  ofParameter<string>&        version();
-  ofParameter<string>&        name();
-  ofParameter<string>&        description();
+private:
+
+	shared_ptr<ParamGroup>	_rootParamGroup;
+
+	map<string, shared_ptr<ParamDesc>>	_paramDescs;
+
+	shared_ptr<ofParameterGroup>	_ofParameterRootGroup;
   
-  bool Save(string path);
-  bool Load(string path);
+	ofParameter<string>	_patchVersion;
+	ofParameter<string>	_patchName;
+	ofParameter<string>	_patchDescription;
 
-  ofParameterGroup& getParameterGroup();
-
-//private:
-
-//private:
-
-  void Store(string name, string groupName, shared_ptr<ParamDesc> paramDesc);
-  tuple<string, string> SplitParamName(string fullParamName);
   
-  ofParameterGroup                          rootGroup;
-  
-  ofParameter<string>                       patchVersion;
-  ofParameter<string>                       patchName;
-  ofParameter<string>                       patchDescription;
-
-  vector<shared_ptr<ParamDesc>>             parameters;
-  vector<shared_ptr<ofParameterGroup>>      childsGroups;
-  map<string, shared_ptr<ofParameterGroup>> groupsByName;
-  map<string, shared_ptr<ParamDesc>>        parametersByName;
-  map<string, vector<string>>               stringLists;
 
 };
 

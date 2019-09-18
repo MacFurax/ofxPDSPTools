@@ -6,6 +6,8 @@ High level modules and tools to use with [ofxPDSP](https://github.com/npisanti/o
 
 Not sure of everything yet, code can change at any moment.
 
+Project started to understand Software Synthetises, reshape in C++ and explore OF.
+
 ## Dependencies & Thank's
 
 Thanks to [OpenFrameworks](https://openframeworks.cc/), [npisanti](https://github.com/npisanti), [ocornut](https://github.com/ocornut), [jvcleave](https://github.com/jvcleave) for there super works.
@@ -27,7 +29,7 @@ Use ofxParameter and ofPrarameterGroup to allow easy patch save/load and pathing
 
 # UI Helpers
 
-Provide a layout over ofPrarameterGroup independent of UI tool. Provide drawer for different UI Tool, for now only ofxImGui
+Provide a layout over ofPrarameterGroup independent of UI tool. Provides drawer for different UI Tool, for now only ofxImGui
 
 
 

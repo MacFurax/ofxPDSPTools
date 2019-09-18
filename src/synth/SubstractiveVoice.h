@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofxPDSP.h"
+#include "VEOscADSRFilter.h"
 
 class SubstractiveVoice : public pdsp::Patchable
 {
@@ -47,6 +48,12 @@ public:
 	pdsp::Amp			osc1PitchAmp;
 	pdsp::Amp			osc1LevelAmp;
 	pdsp::Amp			osc1PWAmp;
+
+	// ------------------------------------------
+	// OSC 2
+	//
+	
+	VEOscADSRFilter osc2;
 	
 
 };

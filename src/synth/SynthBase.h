@@ -6,8 +6,15 @@
 class SynthBase : public pdsp::Patchable
 {
 public:
+	SynthBase();
+	SynthBase(const SynthBase & other) {}
+	~SynthBase();
+
+	void addVoice(std::shared_ptr<VoiceBase> voice);
 
 private:
-	std::vector<VoiceBase> voices;
+	std::vector<std::shared_ptr<VoiceBase>> voices;
+
+	pdsp::Amp outSignal;
 
 };

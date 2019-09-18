@@ -55,6 +55,14 @@ SubstractiveVoice::SubstractiveVoice()
 	osc1PitchAmp >> osc1.in_pitch();
 	osc1LevelAmp >> signalOut.in_mod();
 	osc1PWAmp >> osc1.in_pw();
+
+	// OSC  2
+	//
+	osc2 >> signalOut;
+	trigger >> osc2.in("trigger");
+	pitch >> osc2.in("pitch");
+
+
 }
 
 SubstractiveVoice::~SubstractiveVoice()

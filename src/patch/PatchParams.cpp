@@ -1,5 +1,15 @@
 #include "PatchParams.h"
 
+template <class Container>
+void split2(const std::string& str, Container& cont, char delim = ' ')
+{
+	std::stringstream ss(str);
+	std::string token;
+	while (std::getline(ss, token, delim)) {
+		cont.push_back(token);
+	}
+}
+
 PatchParams::PatchParams()
 {
   rootGroup.setName("patch");
@@ -67,7 +77,7 @@ void PatchParams::AddParam(string name, int value, vector<string> values)
 {
   // TODO add check that param doesn't already exists
   shared_ptr<ParamDesc> paramDesc = make_shared<ParamDesc>();
-  paramDesc->pdspParameter = make_shared<pdsp::Parameter>();;
+  paramDesc->pdspParameter = make_shared<pdsp::Parameter>();
   paramDesc->type = ParamDesc::ParamTypes::Combo;
   paramDesc->comboOptions = values;
 

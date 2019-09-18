@@ -5,6 +5,10 @@
 #include "ofxImGui.h"
 #include "ofxXmlSettings.h"
 
+
+template <class Container>
+void split2(const std::string& str, Container& cont, char delim = ' ');
+
 class ParamDesc
 {
 public:
@@ -16,6 +20,15 @@ public:
   vector<string>              comboOptions; // if paramType is StringList
 };
 
+
+class ParamGroup
+{
+public:
+	
+private:
+	std::map<std::string, std::shared_ptr<ParamGroup>> subGroups;
+	std::vector<std::shared_ptr<ParamDesc>> params;
+};
 
 class PatchParams
 {

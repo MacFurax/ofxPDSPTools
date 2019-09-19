@@ -10,7 +10,7 @@
 #include "PatchParams.h"
 
 // ui
-#include "ofxImGuiPathParamsUI.h"
+#include "ofxImGuiPatchParamsUI.h"
 #include "ofxImGuiLoadSavePatchs.h"
 #include "ofxImGuiMIDIDevicesSelector.h"
 

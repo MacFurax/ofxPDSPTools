@@ -1,4 +1,4 @@
-#include "ofxImGuiPathParamsUI.h"
+#include "ofxImGuiPatchParamsUI.h"
 
 ofxImGuiPatchParamsUI::ofxImGuiPatchParamsUI()
 {

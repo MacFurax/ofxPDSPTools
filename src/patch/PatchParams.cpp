@@ -57,6 +57,8 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 		else {
 			//ofLogNotice() << "Group name:" << token;
 
+			// replace by getOrCreateGroups()
+
 			// check if group already exists in ParamGroup
 			auto pair = lastGroup->getSubGroups().find(token);
 			if (pair != lastGroup->getSubGroups().end())
@@ -107,6 +109,11 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 		
 		tokenIndex++;
 	}
+}
+
+void PatchParams::getOrCreateGroups( string name, shared_ptr<ParamGroup> paramGroup, shared_ptr<ofParameterGroup> ofParamGroup)
+{
+
 }
 
 // -------------------------------------------------------

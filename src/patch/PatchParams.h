@@ -46,6 +46,7 @@ public:
 
 
   void AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime = 50.f, ParamLayouts layout = ParamLayouts::NextLine);
+  void getOrCreateGroups(string name, shared_ptr<ParamGroup> paramGroup, shared_ptr<ofParameterGroup> ofParamGroup);
   shared_ptr<ParamDesc> getParamDesc(string fullname);
   shared_ptr<pdsp::Parameter> getPDSPParameter(string fullname);
   shared_ptr<ofParameterGroup> getOfParameterGroup();

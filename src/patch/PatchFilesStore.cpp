@@ -41,23 +41,30 @@ void PatchFilesStore::reloadPatchsFileList()
   for (int i = 0; i < mDirectoryLister.size(); i++) {
     string fullPath = mDirectoryLister.getPath(i);
     size_t pos =fullPath.find_last_of("\\");
-    mPatcheNames.push_back(fullPath.substr(pos + 1));
+	fullPath = fullPath.substr(pos + 1);
+
+	pos = fullPath.find_last_of("."+mExtention);
+
+	fullPath = fullPath.substr(0, pos - (mExtention.length()));
+
+    mPatcheNames.push_back(fullPath);
   }
 }
 
 // ---------------------------------------------------------
-bool PatchFilesStore::Save(string path, ofParameterGroup toSave)
+bool PatchFilesStore::save(string nakedFilename, ofParameterGroup& toSave)
 {
-  ofLogNotice() << "PatchParams::Save - Save patch to " << path;
+	string fn = mBaseFolder + "/" + nakedFilename + "." + mExtention;
+	ofLogNotice() << "PatchFilesStore::save - Save patch to " << fn;
 
-  ofxXmlSettings tmpxmlset;
-  ofSerialize(tmpxmlset, toSave);
-  tmpxmlset.saveFile(path);
-  return true;
+	ofxXmlSettings tmpxmlset;
+	ofSerialize(tmpxmlset, toSave);
+	tmpxmlset.saveFile(fn);
+	return true;
 }
 
 // ---------------------------------------------------------
-bool PatchFilesStore::Save(int patchId, ofParameterGroup toSave)
+bool PatchFilesStore::save(int patchId, ofParameterGroup& toSave)
 {
   if (mPatcheNames.size() < 0)
   {
@@ -71,31 +78,31 @@ bool PatchFilesStore::Save(int patchId, ofParameterGroup toSave)
     return false;
   }
   
-  // TODO check is a trailing \ or / is present at the end, to avoid always adding it
-  string fn = mBaseFolder +"/"+ mPatcheNames[patchId];
-
-  Save(fn, toSave);
+  save(mPatcheNames[patchId], toSave);
 
   return true;
 }
 
 // ---------------------------------------------------------
-bool PatchFilesStore::Load(string path, ofParameterGroup& loaded)
+bool PatchFilesStore::load(string nakedFilename, ofParameterGroup& loaded)
 {
-  ofLogNotice() << "PatchParams::Load - Load patch from " << path;
+	string fn = mBaseFolder + "/" + nakedFilename + "." + mExtention;
+	ofLogNotice() << "PatchParams::Load - Load patch from " << fn;
+	
+	ofxXmlSettings tmpxmlset;
+	if (!tmpxmlset.loadFile(fn))
+	{
+	ofLogError() << "PatchParams::Load - Fail to load patch " << fn;
+	return false;
+	}
 
-  ofxXmlSettings tmpxmlset;
-  if (!tmpxmlset.loadFile(path))
-  {
-    ofLogError() << "PatchParams::Load - Fail to load patch " << path;
-    return false;
-  }
-  ofDeserialize(tmpxmlset, loaded);
-  return true;
+	ofDeserialize(tmpxmlset, loaded);
+
+	return true;
 }
 
 // ---------------------------------------------------------
-bool PatchFilesStore::Load(int patchId, ofParameterGroup& loaded)
+bool PatchFilesStore::load(int patchId, ofParameterGroup& loaded)
 {
   if (mPatcheNames.size() < 0)
   {
@@ -109,10 +116,7 @@ bool PatchFilesStore::Load(int patchId, ofParameterGroup& loaded)
     return false;
   }
 
-  // TODO check is a trailing \ or / is present at the end, to avoid always adding it
-  string fn = mBaseFolder +"/" + mPatcheNames[patchId];
-
-  Load(fn, loaded);
+  load(mPatcheNames[patchId], loaded);
 
   return true;
 }

@@ -22,7 +22,7 @@ PatchParams::~PatchParams()
 }
 
 // -------------------------------------------------------
-void PatchParams::AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime, ParamLayouts layout)
+void PatchParams::AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime, ParamLayouts layout, ParamWidgets widget)
 {
 	vector<string> names;
 	names = ofSplitString(fullname, ".");
@@ -39,6 +39,7 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 			// add it to group
 			//ofLogNotice() << "Parameter name:" << token;
 			shared_ptr<pdsp::Parameter> param = make_shared<pdsp::Parameter>();
+
 			shared_ptr<ParamDesc> paramDesc = make_shared<ParamDesc>();
 
 			param->set(token, value, minValue, maxValue);
@@ -47,6 +48,7 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 			paramDesc->pdspParameter = param;
 			paramDesc->layout = layout;
 			paramDesc->type = ParamTypes::Float;
+			paramDesc->widget = widget;
 
 			_paramDescs[fullname] = paramDesc;
 			lastGroup->getParams().push_back(paramDesc);
@@ -57,63 +59,152 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 		else {
 			//ofLogNotice() << "Group name:" << token;
 
-			// replace by getOrCreateGroups()
-
-			// check if group already exists in ParamGroup
-			auto pair = lastGroup->getSubGroups().find(token);
-			if (pair != lastGroup->getSubGroups().end())
-			{
-				// found, set as last group
-				lastGroup = pair->second;
-			}
-			else
-			{
-				// not found create it
-				shared_ptr<ParamGroup> newGroup = make_shared<ParamGroup>();
-				lastGroup->getSubGroups()[token] = newGroup;
-				lastGroup = newGroup;
-			}
-
-			// check if group already exist in ofParameterGroup
-			bool found = false;
-			shared_ptr<ofParameterGroup> subGroup = nullptr;
-			for (auto param : *(lastOfParameterGroup))
-			{
-				subGroup = dynamic_pointer_cast<ofParameterGroup>(param);
-				if (subGroup)
-				{
-					if (subGroup->getName() == token)
-					{
-						found = true;
-						break;
-					}
-				}
-			}
-
-			if (found)
-			{
-				// found, set this group as lastOne
-				lastOfParameterGroup = subGroup;
-			}
-			else
-			{
-				// not found, create one, add it to current group
-				// set lastGroup to the new  one
-				shared_ptr<ofParameterGroup> newGroup = make_shared<ofParameterGroup>();
-				newGroup->setName(token);
-				lastOfParameterGroup->add(*(newGroup));
-				lastOfParameterGroup = newGroup;
-			}
-
+			// find or create sub group called token
+			// It getOrCreateSubParamGroup create a new subGroup
+			// it add it to the current group
+			lastGroup = getOrCreateSubParamGroup(token, lastGroup );
+			lastOfParameterGroup = getOrCreateSubOfParamGroup(token, lastOfParameterGroup);
 		}
 		
 		tokenIndex++;
 	}
 }
 
-void PatchParams::getOrCreateGroups( string name, shared_ptr<ParamGroup> paramGroup, shared_ptr<ofParameterGroup> ofParamGroup)
+// -------------------------------------------------------
+void PatchParams::AddParam(string fullname, int value, vector<string> options, float smoothingTime, ParamLayouts layout, ParamWidgets widget)
 {
+	vector<string> names;
+	names = ofSplitString(fullname, ".");
 
+	shared_ptr<ParamGroup> lastGroup = _rootParamGroup;
+	shared_ptr<ofParameterGroup> lastOfParameterGroup = _ofParameterRootGroup;
+
+	int tokenIndex = 0;
+	for (string token : names)
+	{
+		if (tokenIndex == (names.size() - 1))
+		{
+			// this is the parameter name
+			// add it to group
+			//ofLogNotice() << "Parameter name:" << token;
+			shared_ptr<pdsp::Parameter> param = make_shared<pdsp::Parameter>();
+
+			shared_ptr<ParamDesc> paramDesc = make_shared<ParamDesc>();
+
+			param->set(token, value, 0, options.size()-1);
+			param->enableSmoothing(smoothingTime);
+
+			paramDesc->pdspParameter = param;
+			paramDesc->layout = layout;
+			paramDesc->type = ParamTypes::Combo;
+			paramDesc->widget = widget;
+			paramDesc->comboOptions = options;
+
+			_paramDescs[fullname] = paramDesc;
+			lastGroup->getParams().push_back(paramDesc);
+
+			lastOfParameterGroup->add(paramDesc->pdspParameter->getOFParameterInt());
+
+		}
+		else {
+			//ofLogNotice() << "Group name:" << token;
+
+			// find or create sub group called token
+			// It getOrCreateSubParamGroup create a new subGroup
+			// it add it to the current group
+			lastGroup = getOrCreateSubParamGroup(token, lastGroup);
+			lastOfParameterGroup = getOrCreateSubOfParamGroup(token, lastOfParameterGroup);
+		}
+
+		tokenIndex++;
+	}
+}
+
+// -------------------------------------------------------
+const string & PatchParams::getName()
+{
+	return _patchName.get();
+}
+
+// -------------------------------------------------------
+void PatchParams::setName( string name)
+{
+	_patchName.set(name);
+}
+
+// -------------------------------------------------------
+const string & PatchParams::getDescription()
+{
+	return _patchDescription.get();
+}
+
+// -------------------------------------------------------
+void PatchParams::setDescription( string description )
+{
+	_patchDescription.set(description);
+}
+
+// -------------------------------------------------------
+shared_ptr<ParamGroup> PatchParams::getOrCreateSubParamGroup( string name, shared_ptr<ParamGroup> currentGroup )
+{
+	// check if group already exists in ParamGroup
+	auto g = findSubGroup(name, currentGroup);
+	if (g)
+	{
+		// found, return it
+		return g;
+	}
+
+	// not found create it
+	shared_ptr<ParamGroup> newGroup = make_shared<ParamGroup>();
+	newGroup->getName() = name;
+	currentGroup->getSubGroups().push_back(newGroup);
+	return newGroup;
+}
+
+shared_ptr<ParamGroup> PatchParams::findSubGroup(string name, shared_ptr<ParamGroup> currentGroup)
+{
+	for (auto g : currentGroup->getSubGroups())
+	{
+		if (g->getName() == name)
+		{
+			return g;
+		}
+	}
+	return  nullptr;
+}
+
+// -------------------------------------------------------
+shared_ptr<ofParameterGroup> PatchParams::getOrCreateSubOfParamGroup(string name, shared_ptr<ofParameterGroup> currentGroup )
+{
+	// check if group already exist in ofParameterGroup
+	bool found = false;
+	shared_ptr<ofParameterGroup> subGroup = nullptr;
+	for (auto param : *(currentGroup))
+	{
+		subGroup = dynamic_pointer_cast<ofParameterGroup>(param);
+		if (subGroup)
+		{
+			if (subGroup->getName() == name)
+			{
+				found = true;
+				break;
+			}
+		}
+	}
+
+	if (found)
+	{
+		// found, set this group as lastOne
+		return subGroup;
+	}
+	
+	// not found, create one, add it to current group
+	// set lastGroup to the new  one
+	shared_ptr<ofParameterGroup> newGroup = make_shared<ofParameterGroup>();
+	newGroup->setName(name);
+	currentGroup->add(*(newGroup));
+	return newGroup;
 }
 
 // -------------------------------------------------------
@@ -123,7 +214,46 @@ shared_ptr<ofParameterGroup> PatchParams::getOfParameterGroup()
 }
 
 // -------------------------------------------------------
-map<string, shared_ptr<ParamGroup>>& ParamGroup::getSubGroups()
+const shared_ptr<ParamGroup>& PatchParams::getRootParamGroup()
+{
+	return _rootParamGroup;
+}
+
+// -------------------------------------------------------
+shared_ptr<ParamDesc> PatchParams::getParamDesc(string fullname)
+{
+	auto pair = _paramDescs.find(fullname);
+	if (pair != _paramDescs.end())
+	{
+		return pair->second;
+	}
+	return nullptr;
+}
+
+// -------------------------------------------------------
+shared_ptr<pdsp::Parameter> PatchParams::getPDSPParameter(string fullname)
+{
+	shared_ptr<ParamDesc> paramDesc = getParamDesc(fullname);
+	if (paramDesc != nullptr)
+	{
+		return paramDesc->pdspParameter;
+	}
+	return nullptr;
+}
+
+// -------------------------------------------------------
+shared_ptr<pdsp::Parameter> PatchParams::patch(string fullname)
+{
+	return getPDSPParameter(fullname);
+}
+
+string & ParamGroup::getName()
+{
+	return _name;
+}
+
+// -------------------------------------------------------
+vector<shared_ptr<ParamGroup>> & ParamGroup::getSubGroups()
 {
 	return _subGroups;
 }

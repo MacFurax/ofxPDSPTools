@@ -17,10 +17,10 @@ public:
   string          pathAt(int patchId);
   string          buildFullFilename(string nakedName);
 
-  bool            Save(string path, ofParameterGroup toSave);
-  bool            Save(int patchId, ofParameterGroup toSave);
-  bool            Load(string path, ofParameterGroup& loaded);
-  bool            Load(int patchId, ofParameterGroup& loaded);
+  bool            save(string nakedFilename, ofParameterGroup & toSave);
+  bool            save(int patchId, ofParameterGroup & toSave);
+  bool            load(string nakedFilename, ofParameterGroup & loaded);
+  bool            load(int patchId, ofParameterGroup & loaded);
   
 private:
   string          mBaseFolder = "./patches";

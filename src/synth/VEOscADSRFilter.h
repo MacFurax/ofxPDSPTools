@@ -44,6 +44,7 @@ private:
 	pdsp::Amp			pulseWidth;
 
 	pdsp::ADSR			oscADSR;
+	pdsp::Amp			oscADSRAmp;
 	
 	// Filter with ADSR
 	pdsp::SVFilter		filter;

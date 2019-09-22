@@ -12,7 +12,7 @@ VESingleOSC::VESingleOSC()
 
 	adsr >> adsrAmp.in_mod();
 
-	osc.out_pulse() >> outSignal;
+	osc.out_pulse() >> adsrAmp >> outSignal;
 }
 
 VESingleOSC::~VESingleOSC()

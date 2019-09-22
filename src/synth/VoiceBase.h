@@ -28,17 +28,21 @@ public:
 	/*!
 	 Add the VoiceElement and patch trigger, pitch and outSignal.
 	*/
-	void addElement(VoiceElement& element);
+	void addElement(VoiceElement* element);
+	VoiceElement* getVoiceElementAt( int index);
 
 	pdsp::Patchable & in_trig();
 	pdsp::Patchable & in_pitch();
+	pdsp::Patchable & in_ve_level(); // voice element level
+	pdsp::Patchable & out_signal();
 
 protected:
 	int index = 0;
-	std::vector<VoiceElement> elements;
+	std::vector<VoiceElement*> elements;
 
 	pdsp::PatchNode trigger;
 	pdsp::PatchNode pitch;
+	pdsp::PatchNode voiceElementLevel;
 
 	pdsp::Amp outSignal;
 };

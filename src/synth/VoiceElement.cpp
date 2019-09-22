@@ -10,15 +10,13 @@ VoiceElement::VoiceElement()
 	
 
 	addModuleOutput("signal", outSignal); // first = default
-
-	1.0f >> outSignal.in_mod();
 }
 
 VoiceElement::~VoiceElement()
 {
 }
 
-pdsp::Patchable & VoiceElement::signal()
+pdsp::Patchable & VoiceElement::out_signal()
 {
 	return outSignal;
 }
@@ -31,4 +29,9 @@ pdsp::Patchable & VoiceElement::in_trig()
 pdsp::Patchable & VoiceElement::in_pitch()
 {
 	return pitch;
+}
+
+pdsp::Patchable & VoiceElement::in_level()
+{
+	return outSignal.in_mod();
 }

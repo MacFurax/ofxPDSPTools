@@ -2,7 +2,9 @@
 
 VoiceBase::VoiceBase()
 {
-	addModuleInput("level", outSignal.in_mod()); // first = default
+	ofLogNotice() << "VoiceBase::VoiceBase";
+
+	addModuleInput("level", voiceElementLevel); // first = default
 	addModuleInput("trigger", trigger); 
 	addModuleInput("pitch", pitch);
 	
@@ -22,14 +24,25 @@ VoiceBase::~VoiceBase()
 {
 }
 
-void VoiceBase::addElement(VoiceElement& element)
+void VoiceBase::addElement(VoiceElement* element)
 {
 	elements.push_back(element);
 
-	trigger >> element.in("trigger");
-	pitch >> element.in("pitch");
+	trigger >> element->in_trig();
+	pitch >> element->in_pitch();
+	voiceElementLevel >> element->in_level();
 
-	element >> outSignal;
+	element->out_signal() >> outSignal;
+}
+
+VoiceElement * VoiceBase::getVoiceElementAt(int index)
+{
+	if (index >= elements.size())
+	{
+		return nullptr;
+	}
+
+	return elements[index];
 }
 
 pdsp::Patchable & VoiceBase::in_trig()
@@ -40,5 +53,15 @@ pdsp::Patchable & VoiceBase::in_trig()
 pdsp::Patchable & VoiceBase::in_pitch()
 {
 	return pitch;
+}
+
+pdsp::Patchable & VoiceBase::in_ve_level()
+{
+	return voiceElementLevel;
+}
+
+pdsp::Patchable & VoiceBase::out_signal()
+{
+	return outSignal;
 }
 

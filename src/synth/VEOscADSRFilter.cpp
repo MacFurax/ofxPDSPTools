@@ -2,6 +2,8 @@
 
 VEOscADSRFilter::VEOscADSRFilter()
 {
+	ofLogNotice() << "VEOscADSRFilter::VEOscADSRFilter";
+
 	//
 	// export in/out
 	//
@@ -43,37 +45,14 @@ VEOscADSRFilter::VEOscADSRFilter()
 	trigger >> filterADSR.in_trig();
 	pitch + detune + fine >> osc.in_pitch();
 
-	filter >> out("signal");
+	oscADSR >> oscADSRAmp.in_mod();
+	oscADSRAmp >> outSignal;
 
-	//
-	// patch wave form generator
-	//
-
-	osc.out_sine() >> sineLevel;
-	1.0f >> sineLevel.in_mod();
-	osc.out_triangle() >> triangleLevel;
-	0.0f >> triangleLevel.in_mod();
-	osc.out_saw() >> sawLevel;
-	0.0f >> sawLevel.in_mod();
-	osc.out_pulse() >> pulseLevel;
-	0.0f >> pulseLevel.in_mod();
-	noise >> noiseLevel;
-	0.0f >> noiseLevel.in_mod();
-
-	sineLevel >> wavesSum;
-	triangleLevel >> wavesSum;
-	sawLevel >> wavesSum;
-	pulseLevel >> wavesSum;
-	noiseLevel >> wavesSum;
-
-	wavesSum >> oscADSR >> filter;
-
-	//
-	// patch ADSR filter
-	//
-	
-	filterType >> filter.in_mode();
-	filterADSR >> cutoffLevel >> filter.in_cutoff();
+	osc.out_sine() >> sineLevel >> oscADSRAmp;
+	osc.out_triangle() >> triangleLevel >> oscADSRAmp;
+	osc.out_saw() >> sawLevel >> oscADSRAmp;
+	osc.out_pulse() >> pulseLevel >> oscADSRAmp;
+	noise >> noiseLevel >> oscADSRAmp;
 }
 
 VEOscADSRFilter::~VEOscADSRFilter()

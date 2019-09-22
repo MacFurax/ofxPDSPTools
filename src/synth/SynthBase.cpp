@@ -13,13 +13,13 @@ SynthBase::~SynthBase()
 {
 }
 
-std::vector<VoiceBase>& SynthBase::getVoices()
+std::vector<VoiceBase*> SynthBase::getVoices()
 {
 	return voices;
 }
 
-void SynthBase::addVoice(VoiceBase& voice)
+void SynthBase::addVoice(VoiceBase* voice)
 {
 	voices.push_back(voice);
-	voice >> outSignal;
+	voice->out_signal() >> outSignal;
 }

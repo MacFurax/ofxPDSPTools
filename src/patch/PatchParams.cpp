@@ -242,9 +242,9 @@ shared_ptr<pdsp::Parameter> PatchParams::getPDSPParameter(string fullname)
 }
 
 // -------------------------------------------------------
-shared_ptr<pdsp::Parameter> PatchParams::patch(string fullname)
+pdsp::Parameter & PatchParams::patch(string fullname)
 {
-	return getPDSPParameter(fullname);
+	return *(getPDSPParameter(fullname));
 }
 
 string & ParamGroup::getName()

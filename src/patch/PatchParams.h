@@ -57,7 +57,7 @@ public:
 
   shared_ptr<ParamDesc> getParamDesc(string fullname);
   shared_ptr<pdsp::Parameter> getPDSPParameter(string fullname);
-  shared_ptr<pdsp::Parameter> patch(string fullname);
+  pdsp::Parameter & patch(string fullname);
   shared_ptr<ofParameterGroup> getOfParameterGroup();
 
   const shared_ptr<ParamGroup>& getRootParamGroup();

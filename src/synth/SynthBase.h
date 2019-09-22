@@ -12,11 +12,11 @@ public:
 
 	void virtual setup(int voiceCount) {}
 
-	std::vector<VoiceBase>& getVoices();
+	std::vector<VoiceBase*> getVoices();
 
 protected:
 	
-	void addVoice(VoiceBase& voice);
+	void addVoice(VoiceBase* voice);
 
 	std::vector<VoiceBase*> voices;
 

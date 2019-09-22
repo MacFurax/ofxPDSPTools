@@ -14,9 +14,11 @@ void SynthA::setup(int voiceCount)
 {
 	for (int i = 0; i < voiceCount; i++)
 	{
-		VESingleOSC* voice = new VESingleOSC();
-		44.f + i*10.f >> voice->in_pitch();
-		voice->signal() >> outSignal;
-		ves.push_back(voice);
+		VEOscADSRFilter* ve = new VEOscADSRFilter();
+		VoiceBase* vb = new VoiceBase(i);
+		vb->addElement(ve);
+		vb->out_signal() >> outSignal;
+		addVoice(vb);
 	}
+
 }

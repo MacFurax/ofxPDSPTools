@@ -18,7 +18,7 @@ protected:
 	
 	void addVoice(VoiceBase& voice);
 
-	std::vector<VoiceBase> voices;
+	std::vector<VoiceBase*> voices;
 
 	pdsp::Amp outSignal;
 

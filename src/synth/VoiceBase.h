@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxPDSP.h"
 #include "VoiceElement.h"
+
 //! VoiceBase, define a Voice in a SynthBase
 /*!
  VoiceBase is the base class to compose voices of a Synth.
@@ -19,6 +20,7 @@ class VoiceBase : public pdsp::Patchable
 {
 public:
 	VoiceBase();
+	VoiceBase( int _index);
 	VoiceBase(const VoiceBase & other) {}
 	~VoiceBase();
 
@@ -26,11 +28,14 @@ public:
 	/*!
 	 Add the VoiceElement and patch trigger, pitch and outSignal.
 	*/
-	void addElement(shared_ptr<VoiceElement> element );
+	void addElement(VoiceElement& element);
+
+	pdsp::Patchable & in_trig();
+	pdsp::Patchable & in_pitch();
 
 protected:
-
-	std::vector<shared_ptr<VoiceElement>> elements;
+	int index = 0;
+	std::vector<VoiceElement> elements;
 
 	pdsp::PatchNode trigger;
 	pdsp::PatchNode pitch;

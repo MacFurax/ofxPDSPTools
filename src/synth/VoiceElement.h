@@ -24,6 +24,10 @@ public:
 	VoiceElement(const VoiceElement& other) {}
 	~VoiceElement();
 
+	pdsp::Patchable & signal();
+	pdsp::Patchable & in_trig();
+	pdsp::Patchable & in_pitch();
+
 protected:
 	pdsp::PatchNode trigger;
 	pdsp::PatchNode pitch;

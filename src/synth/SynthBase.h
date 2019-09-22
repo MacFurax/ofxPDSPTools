@@ -10,10 +10,15 @@ public:
 	SynthBase(const SynthBase & other) {}
 	~SynthBase();
 
-	void addVoice(std::shared_ptr<VoiceBase> voice);
+	void virtual setup(int voiceCount) {}
 
-private:
-	std::vector<std::shared_ptr<VoiceBase>> voices;
+	std::vector<VoiceBase>& getVoices();
+
+protected:
+	
+	void addVoice(VoiceBase& voice);
+
+	std::vector<VoiceBase> voices;
 
 	pdsp::Amp outSignal;
 

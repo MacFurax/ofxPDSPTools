@@ -1,6 +1,6 @@
-#include "VEOscADSRFilter.h"
+#include "VEOscLFO.h"
 
-VEOscADSRFilter::VEOscADSRFilter()
+VEOscLFO::VEOscLFO()
 {
 	//
 	// export in/out
@@ -23,27 +23,15 @@ VEOscADSRFilter::VEOscADSRFilter()
 	addModuleInput("sustain", oscADSR.in_sustain());
 	addModuleInput("release", oscADSR.in_release());
 
-	//for filter ADSR
-
-	addModuleInput("filter.cutoff", filter.in_cutoff());
-	addModuleInput("filter.reso", filter.in_reso());
-
-	addModuleInput("filter.attack", filterADSR.in_attack());
-	addModuleInput("filter.decay", filterADSR.in_decay());
-	addModuleInput("filter.sustain", filterADSR.in_sustain());
-	addModuleInput("filter.release", filterADSR.in_release());
-
-	addModuleInput("filter.level", cutoffLevel);
-
 	//
 	// patch trigger, pitch and signal
 	//
 
-	trigger >> oscADSR.in_trig();
-	trigger >> filterADSR.in_trig();
-	pitch + detune + fine >> osc.in_pitch();
+	in("trigger") >> oscADSR.in_trig();
 
-	filter >> out("signal");
+	in("pitch") + detune + fine >> osc.in_pitch();
+
+	oscADSR >> out("signal");
 
 	//
 	// patch wave form generator
@@ -66,16 +54,22 @@ VEOscADSRFilter::VEOscADSRFilter()
 	pulseLevel >> wavesSum;
 	noiseLevel >> wavesSum;
 
-	wavesSum >> oscADSR >> filter;
+	wavesSum >> oscADSR;
 
 	//
-	// patch ADSR filter
+	// LFO
 	//
-	
-	filterType >> filter.in_mode();
-	filterADSR >> cutoffLevel >> filter.in_cutoff();
+
+	lfo.out_sine() >> lfoSineLevel >> lfoWavesSum;
+	lfo.out_triangle() >> lfoTriangleLevel >> lfoWavesSum;
+	lfo.out_saw() >> lfoSawLevel >> lfoWavesSum;
+	lfo.out_square() >> lfoSquareLevel >> lfoWavesSum;
+
+	lfoWavesSum >> lfoToPitch >> detune;
+	lfoWavesSum >> lfoToLevel >> outSignal.in_mod();
+	lfoWavesSum >> lfoToPw >> osc.in_pw();
 }
 
-VEOscADSRFilter::~VEOscADSRFilter()
+VEOscLFO::~VEOscLFO()
 {
 }

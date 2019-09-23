@@ -30,7 +30,7 @@ private:
 
 	// Filter
 	pdsp::SVFilter		filter;
-	pdsp::PatchNode		filterType; // SVFilter mode 0.0 to 3.0
+	//pdsp::PatchNode		filterType; // SVFilter mode 0.0 to 3.0
 
 	// LFO
 	pdsp::LFO			lfo;
@@ -45,6 +45,13 @@ private:
 	pdsp::Amp			lfoToPitch;
 	pdsp::Amp			lfoToLevel;
 	pdsp::Amp			lfoToPw;
+	pdsp::Amp			lfoToCutOff;
+
+	pdsp::Amp			lfoToSine;
+	pdsp::Amp			lfoToTriangle;
+	pdsp::Amp			lfoToSaw;
+	pdsp::Amp			lfoToPulse;
+	pdsp::Amp			lfoToNoise;
 
 
 };

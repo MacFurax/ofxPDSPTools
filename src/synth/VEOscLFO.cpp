@@ -23,6 +23,10 @@ VEOscLFO::VEOscLFO()
 	addModuleInput("sustain", oscADSR.in_sustain());
 	addModuleInput("release", oscADSR.in_release());
 
+	addModuleInput("filter.type", filter.in_mode());
+	addModuleInput("filter.cutoff", filter.in_cutoff());
+	addModuleInput("filter.reso", filter.in_reso());
+
 	addModuleInput("lfo.freq", lfo.in_freq());
 	addModuleInput("lfo.sine", lfoSineLevel.in_mod());
 	addModuleInput("lfo.triangle", lfoTriangleLevel.in_mod());
@@ -32,9 +36,15 @@ VEOscLFO::VEOscLFO()
 	addModuleInput("lfo.toPitch", lfoToPitch.in_mod());
 	addModuleInput("lfo.toLevel", lfoToLevel.in_mod());
 	addModuleInput("lfo.toPw", lfoToPw.in_mod());
-	addModuleInput("lfo.toCutOff", filter.in_cutoff());
+	addModuleInput("lfo.toCutOff", lfoToCutOff.in_mod());
+	
+	addModuleInput("lfo.toSine", lfoToSine.in_mod());
+	addModuleInput("lfo.toTriangle", lfoToTriangle.in_mod());
+	addModuleInput("lfo.toSaw", lfoToSaw.in_mod());
+	addModuleInput("lfo.toPulse", lfoToPulse.in_mod());
+	addModuleInput("lfo.toNoise", lfoToNoise.in_mod());
 
-	//TODO add filter and lfo to wave form amp
+	
 
 
 	//
@@ -46,31 +56,17 @@ VEOscLFO::VEOscLFO()
 	pitch + detune + fine >> osc.in_pitch();
 
 	oscADSR >> oscADSRAmp.in_mod();
-	oscADSRAmp >> outSignal;
+	oscADSRAmp >> filter >> outSignal;
 
 	//
 	// patch wave form generator
 	//
 
 	osc.out_sine() >> sineLevel >> oscADSRAmp;
-	//1.0f >> sineLevel.in_mod();
 	osc.out_triangle() >> triangleLevel >> oscADSRAmp;
-	//0.0f >> triangleLevel.in_mod();
 	osc.out_saw() >> sawLevel >> oscADSRAmp;
-	//0.0f >> sawLevel.in_mod();
 	osc.out_pulse() >> pulseLevel >> oscADSRAmp;
-	//0.0f >> pulseLevel.in_mod();
 	noise >> noiseLevel >> oscADSRAmp;
-	//0.0f >> noiseLevel.in_mod();
-
-	/*sineLevel >> wavesSum;
-	triangleLevel >> wavesSum;
-	sawLevel >> wavesSum;
-	pulseLevel >> wavesSum;
-	noiseLevel >> wavesSum;
-
-	wavesSum >> oscADSRAmp;*/
-
 
 	//
 	// LFO
@@ -84,6 +80,13 @@ VEOscLFO::VEOscLFO()
 	lfoWavesSum >> lfoToPitch >> detune;
 	lfoWavesSum >> lfoToLevel >> outSignal.in_mod();
 	lfoWavesSum >> lfoToPw >> osc.in_pw();
+	lfoWavesSum >> lfoToCutOff >> filter.in_cutoff();
+
+	lfoWavesSum >> lfoToSine >> sineLevel.in_mod();
+	lfoWavesSum >> lfoToTriangle >> triangleLevel.in_mod();
+	lfoWavesSum >> lfoToSaw >> sawLevel.in_mod();
+	lfoWavesSum >> lfoToPulse >> pulseLevel.in_mod();
+	lfoWavesSum >> lfoToNoise >> noiseLevel.in_mod();
 }
 
 VEOscLFO::~VEOscLFO()

@@ -39,8 +39,6 @@ private:
 	pdsp::Amp			pulseLevel;
 	pdsp::Amp			noiseLevel;
 
-	pdsp::Amp			wavesSum;
-
 	pdsp::Amp			pulseWidth;
 
 	pdsp::ADSR			oscADSR;

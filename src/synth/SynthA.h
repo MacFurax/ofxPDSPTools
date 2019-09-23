@@ -3,6 +3,7 @@
 #include "ofxPDSPTools.h"
 #include "VEOscADSRFilter.h"
 #include "VESingleOSC.h"
+#include "VEOscLFO.h"
 
 class SynthA : public SynthBase
 {

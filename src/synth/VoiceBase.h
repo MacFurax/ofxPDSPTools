@@ -33,7 +33,6 @@ public:
 
 	pdsp::Patchable & in_trig();
 	pdsp::Patchable & in_pitch();
-	pdsp::Patchable & in_ve_level(); // voice element level
 	pdsp::Patchable & out_signal();
 
 protected:
@@ -42,7 +41,5 @@ protected:
 
 	pdsp::PatchNode trigger;
 	pdsp::PatchNode pitch;
-	pdsp::PatchNode voiceElementLevel;
-
 	pdsp::Amp outSignal;
 };

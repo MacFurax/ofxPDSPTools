@@ -2,13 +2,12 @@
 
 VoiceElement::VoiceElement()
 {
-	ofLogNotice() << "VoiceElement::VoiceElement";
+	//ofLogNotice() << "VoiceElement::VoiceElement";
 
 	addModuleInput("level", outSignal.in_mod()); // first = default
 	addModuleInput("trigger", trigger); 
 	addModuleInput("pitch", pitch);
 	
-
 	addModuleOutput("signal", outSignal); // first = default
 }
 

@@ -23,38 +23,54 @@ VEOscLFO::VEOscLFO()
 	addModuleInput("sustain", oscADSR.in_sustain());
 	addModuleInput("release", oscADSR.in_release());
 
+	addModuleInput("lfo.freq", lfo.in_freq());
+	addModuleInput("lfo.sine", lfoSineLevel.in_mod());
+	addModuleInput("lfo.triangle", lfoTriangleLevel.in_mod());
+	addModuleInput("lfo.saw", lfoSawLevel.in_mod());
+	addModuleInput("lfo.square", lfoSquareLevel.in_mod());
+
+	addModuleInput("lfo.toPitch", lfoToPitch.in_mod());
+	addModuleInput("lfo.toLevel", lfoToLevel.in_mod());
+	addModuleInput("lfo.toPw", lfoToPw.in_mod());
+	addModuleInput("lfo.toCutOff", filter.in_cutoff());
+
+	//TODO add filter and lfo to wave form amp
+
+
 	//
 	// patch trigger, pitch and signal
 	//
 
-	in("trigger") >> oscADSR.in_trig();
+	trigger >> oscADSR.in_trig();
 
-	in("pitch") + detune + fine >> osc.in_pitch();
+	pitch + detune + fine >> osc.in_pitch();
 
-	oscADSR >> out("signal");
+	oscADSR >> oscADSRAmp.in_mod();
+	oscADSRAmp >> outSignal;
 
 	//
 	// patch wave form generator
 	//
 
-	osc.out_sine() >> sineLevel;
-	1.0f >> sineLevel.in_mod();
-	osc.out_triangle() >> triangleLevel;
-	0.0f >> triangleLevel.in_mod();
-	osc.out_saw() >> sawLevel;
-	0.0f >> sawLevel.in_mod();
-	osc.out_pulse() >> pulseLevel;
-	0.0f >> pulseLevel.in_mod();
-	noise >> noiseLevel;
-	0.0f >> noiseLevel.in_mod();
+	osc.out_sine() >> sineLevel >> oscADSRAmp;
+	//1.0f >> sineLevel.in_mod();
+	osc.out_triangle() >> triangleLevel >> oscADSRAmp;
+	//0.0f >> triangleLevel.in_mod();
+	osc.out_saw() >> sawLevel >> oscADSRAmp;
+	//0.0f >> sawLevel.in_mod();
+	osc.out_pulse() >> pulseLevel >> oscADSRAmp;
+	//0.0f >> pulseLevel.in_mod();
+	noise >> noiseLevel >> oscADSRAmp;
+	//0.0f >> noiseLevel.in_mod();
 
-	sineLevel >> wavesSum;
+	/*sineLevel >> wavesSum;
 	triangleLevel >> wavesSum;
 	sawLevel >> wavesSum;
 	pulseLevel >> wavesSum;
 	noiseLevel >> wavesSum;
 
-	wavesSum >> oscADSR;
+	wavesSum >> oscADSRAmp;*/
+
 
 	//
 	// LFO

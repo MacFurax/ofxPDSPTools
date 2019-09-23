@@ -23,11 +23,14 @@ private:
 	pdsp::Amp			pulseLevel;
 	pdsp::Amp			noiseLevel;
 
-	pdsp::Amp			wavesSum;
-
 	pdsp::Amp			pulseWidth;
 
 	pdsp::ADSR			oscADSR;
+	pdsp::Amp			oscADSRAmp;
+
+	// Filter
+	pdsp::SVFilter		filter;
+	pdsp::PatchNode		filterType; // SVFilter mode 0.0 to 3.0
 
 	// LFO
 	pdsp::LFO			lfo;

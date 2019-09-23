@@ -50,7 +50,13 @@ private:
 	pdsp::SVFilter		filter;
 	pdsp::PatchNode		filterType; // SVFilter mode 0.0 to 3.0
 	pdsp::ADSR			filterADSR;
-	pdsp::Amp			cutoffLevel; // amplitude of filter cutoff control
+	//pdsp::Amp			cutoffLevel; // amplitude of filter cutoff control
 
+	pdsp::Amp			adsrToCutOff;
+	pdsp::Amp			adsrToPw;
+	pdsp::Amp			adsrToSine;
+	pdsp::Amp			adsrToTriangle;
+	pdsp::Amp			adsrToSaw;
+	pdsp::Amp			adsrToPulse;
 
 };

@@ -1,6 +1,6 @@
 # WIP ofxPDSPTools
 
-**Work in progress**    
+**`Work in progress`**    
 
 High level modules and tools to use with [ofxPDSP](https://github.com/npisanti/ofxPDSP). Like Synth, Synth parameters, patch saving/loading, UI helpers ... 
 
@@ -15,21 +15,19 @@ Thanks to [OpenFrameworks](https://openframeworks.cc/), [npisanti](https://githu
 This addon relies on other libraries :
 
 - [ofxPDSP](https://github.com/npisanti/ofxPDSP)
+   - ofxOsc
+   - [ofxMidi]()
+   - [ofxAudioFile]()
 - [ImGui (fork)](https://github.com/MacFurax/imgui)
 - [ofxImGui (fork)](https://github.com/MacFurax/ofxImGui)
+- ofxXmlSettings
 
+## Compile
 
-# Synth
+I can only test on Windows with Visual Studio 2017/2019.
 
-Substractive synth with few different type of voices
+You need to declare a environment variable call `OF_ROOT` the point to the OF folder.
 
-# Synth Params & Patchs
-
-Use ofxParameter and ofPrarameterGroup to allow easy patch save/load and pathing to pdsp::Patchable.
-
-# UI Helpers
-
-Provide a layout over ofPrarameterGroup independent of UI tool. Provides drawer for different UI Tool, for now only ofxImGui
 
 
 

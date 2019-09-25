@@ -10,8 +10,6 @@ VoiceBase::VoiceBase()
 
 	addModuleOutput("signal", outSignal); // first = default
 
-	1.0f >> outSignal.in_mod();
-
 }
 
 VoiceBase::VoiceBase(int _index) : VoiceBase()
@@ -29,7 +27,6 @@ void VoiceBase::addElement(VoiceElement* element)
 
 	trigger >> element->in_trig();
 	pitch >> element->in_pitch();
-	//voiceElementLevel >> element->in_level();
 
 	element->out_signal() >> outSignal;
 }

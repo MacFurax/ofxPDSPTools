@@ -20,6 +20,6 @@ protected:
 
 	std::vector<VoiceBase*> voices;
 
-	pdsp::Amp outSignal;
+	pdsp::Amp		outSignal;
 
 };

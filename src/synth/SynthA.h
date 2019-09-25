@@ -17,6 +17,9 @@ public:
 
 private:
 
-	
+	pdsp::SVFilter	filter;
+	pdsp::LFO		filterLFO;
+	pdsp::Switch	filterLFOType;
+	pdsp::Amp		lfoToCutOff;
 
 };

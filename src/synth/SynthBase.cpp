@@ -6,7 +6,6 @@ SynthBase::SynthBase()
 	addModuleInput("level", outSignal.in_mod()); // first = default
 
 	addModuleOutput("signal", outSignal); // first = default
-	1.0f >> outSignal.in_mod();
 }
 
 SynthBase::~SynthBase()

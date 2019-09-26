@@ -28,14 +28,67 @@ Clone the project in OF\addons
 ### Compile
 
 I can only test on Windows with Visual Studio 2017/2019.
+But should compile on other platform as I don't use only OF addons.
 
-Of the project is cloned in OF\addons everything should be ok.
+If the project is cloned in OF\addons everything should be ok.
 
+## Modules
+
+### Patch
+#### PatchParams
+
+This class allow to build a hierachy of ParamDesc which contain an pdsp::Parameter which encapulsate an ofParameter.
+It also maintain a ofParameterGroup to ease (de)serialization using ofxXmlSettings.
+
+For each ParamDesc you can provide layout options that will be used by the UI part to draw controls.
+
+
+#### PatchFilesStore
+
+Use the ofParameterGroup of PatchParams to help store/load synth patchs from a given folder.
+
+
+### Synth
+
+Still bit messy.
+
+### UI
+
+All UI is based on a fork of ofxImGui & ImGui.
+
+PatchParam being an abstraction, it could be used to draw UI with ofxGui.
+
+UI helpers to :
+- draw PatchParams controls to setup synth
+- provide a UI to select MIDI output
+- provide a UI to save/load patches
 
 # Examples
 ## example_midi_substractive_synth
 
+This was inspired by the book `Creating Sounds from Scratch` from `Andrea Pejrolo` & `Scott B. Metcalfe`, Arturia Minibrute 2 controls layout and other .
 
+This example feature a synth with a two OSCs voice.
+
+Both allow to select:
+- wave forms weight
+- detune (coarse and fine) 
+- ADSR envelop shape
+- filter (filter type, cutoff and reso)
+
+One provide ADRS to control the filter.
+
+The other provide an LFO ton control many parameter of the voice.
+
+ ![screenshot](assets/example_midi_substractive_synth.png)
+
+
+# To Do
+
+Select a licence.
+
+Not clear yet, but the idea is to create a track object to which I could bind a synth and FXs.
+All build using ofxPDS sequencer system.
 
 
 

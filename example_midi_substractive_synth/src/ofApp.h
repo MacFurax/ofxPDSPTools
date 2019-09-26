@@ -1,7 +1,13 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxImGui.h"
+#include "ofxPDSP.h"
 #include "ofxPDSPTools.h"
+
+#include "SynthA.h"
+
+#include "VESingleOSC.h"
 
 
 class ofApp : public ofBaseApp{
@@ -10,6 +16,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+		void drawUI();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -22,5 +29,20 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+
+
+		PatchParams	pp;
+		ofxImGui::Gui	gui;
+
+		pdsp::midi::Input       midiIn;
+		pdsp::midi::Keys        midiKeys;
+		pdsp::midi::Controls    midiCCs;
+		pdsp::Engine            engine;
+
+		ofxImGuiMIDIDevicesSelector	midiDeviceUI;
+		ofxImGuiLoadSavePatchs patchSaveLoadUI;
+		ofxImGuiPatchParamsUI	patchParamUI;
+
+		SynthA	synth;
 		
 };

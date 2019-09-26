@@ -290,9 +290,6 @@
     <Filter Include="addons\ofxOsc\libs\oscpack\src\ip">
       <UniqueIdentifier>{2988dd8c-24ef-4000-bc9c-b83dae244100}</UniqueIdentifier>
     </Filter>
-    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\posix">
-      <UniqueIdentifier>{061322af-6440-445d-b637-e2f6325d24b6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\win32">
       <UniqueIdentifier>{db92046c-a2cb-47d0-aa6c-94d767967690}</UniqueIdentifier>
     </Filter>

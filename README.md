@@ -78,7 +78,9 @@ Both allow to select:
 
 One provide ADRS to control the filter.
 
-The other provide an LFO ton control many parameter of the voice.
+The other provide an LFO to control many parameters of the voice (level, pitch, ...).
+
+And UI components to setup synth, select MIDI output and load/save patches.
 
  ![screenshot](assets/example_midi_substractive_synth.png)
 

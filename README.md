@@ -82,6 +82,13 @@ The other provide an LFO to control many parameters of the voice (level, pitch, 
 
 And UI components to setup synth, select MIDI output and load/save patches.
 
+
+
+> WARNING: Depending on computers (probably audio card or drivers) synth can produce different audio level and cracks. 
+> So, lower volume of your system before trying it, and if you get cracks lower OSC and/or synth level. 
+> I have to investigate and probably insert a compressor between synth out and audio output.
+
+
  ![screenshot](assets/example_midi_substractive_synth.png)
 
 

@@ -6,7 +6,7 @@ High level modules and tools to use with [ofxPDSP](https://github.com/npisanti/o
 
 Not sure of everything yet, code can change at any moment.
 
-Project started to understand Software Synthetises, reshape in C++ and explore OF.
+Project started to learn DSP, get back into shape with C++ and explore OF.
 
 ## Dependencies & Thank's
 
@@ -22,13 +22,18 @@ This addon relies on other libraries :
 - [ofxImGui (fork)](https://github.com/MacFurax/ofxImGui)
 - ofxXmlSettings
 
-## Compile
+## Install
+Clone the project in OF\addons
+
+### Compile
 
 I can only test on Windows with Visual Studio 2017/2019.
 
-You need to declare a environment variable call `OF_ROOT` the point to the OF folder.
+Of the project is cloned in OF\addons everything should be ok.
 
 
+# Examples
+## example_midi_substractive_synth
 
 
 

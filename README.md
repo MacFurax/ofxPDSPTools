@@ -28,7 +28,7 @@ Clone the project in OF\addons
 ### Compile
 
 I can only test on Windows with Visual Studio 2017/2019.
-But should compile on other platform as I don't use only OF addons.
+But should compile on other platform as I only use OF addons.
 
 If the project is cloned in OF\addons everything should be ok.
 

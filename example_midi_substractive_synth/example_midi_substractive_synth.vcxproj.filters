@@ -7,605 +7,262 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscBundle.cpp">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscMessage.cpp">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscParameterSync.cpp">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscReceiver.cpp">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscSender.cpp">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip\posix</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
-      <Filter>addons\ofxXmlSettings\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxXmlSettings\libs\tinyxml.cpp">
-      <Filter>addons\ofxXmlSettings\libs</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
-      <Filter>addons\ofxXmlSettings\libs</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
-      <Filter>addons\ofxXmlSettings\libs</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxAudioFile\src\ofxAudioFile.cpp">
-      <Filter>addons\ofxAudioFile\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\BaseEngine.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\CorporateGreyTheme.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\DefaultTheme.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\EngineGLFW.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\EngineOpenGLES.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\EngineVk.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\Gui.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\Helpers.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\src\ofxImGuiLoggerChannel.cpp">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui.cpp">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui_demo.cpp">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui_draw.cpp">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui_widgets.cpp">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxBaseMidi.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidi.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiClock.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiIn.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiMessage.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiOut.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiTimecode.cpp">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\desktop\ofxRtMidiIn.cpp">
-      <Filter>addons\ofxMidi\src\desktop</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\src\desktop\ofxRtMidiOut.cpp">
-      <Filter>addons\ofxMidi\src\desktop</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxMidi\libs\rtmidi\RtMidi.cpp">
-      <Filter>addons\ofxMidi\libs\rtmidi</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerBridge.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerGateOutput.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerValueOutput.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\ToGateTrigger.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\TriggerControl.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\TriggerGeiger.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\ValueControl.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\convolution\FDLConvolver.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\convolution</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Amp.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\BasicNodes.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\BufferShell.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\ExternalInput.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Formula.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\leftSum.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\operators.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\PatchNode.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Preparable.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Processor.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Switch.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\AllPassDelay.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\Delay.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\SRDelay.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\AbsoluteValue.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\EnvelopeFollower.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\GainComputer.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\LHDelay.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\PositiveValue.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\RMSDetector.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\SquarePeakDetector.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\ADSR.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\AHR.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\EnvelopeStage.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\APF1.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\APF4.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\MultiLadder4.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\OnePole.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\SVF2.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadBase.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHighShelf.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHPF2.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLowShelf.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLPF2.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadPeakEQ.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\helpers\FFTWorker.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\helpers\UsesSlew.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\helpers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEPSaw.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\DPWTri.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPBased.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPTable.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\base\Oscillator.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\base</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\base\OscillatorVariShape.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\base</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapPulse.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSaw.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSine.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapTri.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\fm\SineFB.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\fm</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\ClockedPhasor.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\LFOPhasor.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\PhasorShifter.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\PMPhasor.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataOsc.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataTable.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTable.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTableOsc.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\random\TriggeredRandom.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\random</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\random\WhiteNoise.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\random</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\BandLimit.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\DownSampler.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\IIRDownSampler2x.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\IIRUpSampler2x.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\UpSampler.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\ZeroDownSampler.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\ZeroUpSampler.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\GrainWindow.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\SampleBuffer.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\Sampler.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\grain\GrainBased.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\samplers\grain</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\grain\GrainTable.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\samplers\grain</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Bitcruncher.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Decimator.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\SampleAndHold.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Saturator1.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Saturator2.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\SoftClip.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\BipolarToUnipolar.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\DBtoLin.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\FreqToMs.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\LinToDB.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\MaxValue.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\OneBarTimeMs.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\OneMinusInput.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\PitchToFreq.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\SamplesDelay.cpp">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\incrementCalculator.cpp">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\sanity_check.cpp">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\random\random.cpp">
-      <Filter>addons\ofxPDSP\src\math\random</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\activate.cpp">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\allocator.cpp">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\tables\blep.cpp">
-      <Filter>addons\ofxPDSP\src\math\tables</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\math\tables\dsp_windows.cpp">
-      <Filter>addons\ofxPDSP\src\math\tables</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\Clockable.cpp">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\MessageBuffer.cpp">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\dynamics\Compressor.cpp">
-      <Filter>addons\ofxPDSP\src\modules\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\dynamics\Ducker.cpp">
-      <Filter>addons\ofxPDSP\src\modules\dynamics</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\effects\DimensionChorus.cpp">
-      <Filter>addons\ofxPDSP\src\modules\effects</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AAHighShelfEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AALowShelfEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AAPeakEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\HighCut.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\HighShelfEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\LowCut.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\LowShelfEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\PeakEQ.cpp">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\CombFilter.cpp">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\PhaserFilter.cpp">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\SVFilter.cpp">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\VAFilter.cpp">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\ADSR_OSC.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\ClockedLFO.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\DataOscillator.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\FMOperator.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\LFO.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\TableOscillator.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\VAOscillator.cpp">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\reverbs\BasiVerb.cpp">
-      <Filter>addons\ofxPDSP\src\modules\reverbs</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\reverbs\IRVerb.cpp">
-      <Filter>addons\ofxPDSP\src\modules\reverbs</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\samplers\GrainCloud.cpp">
-      <Filter>addons\ofxPDSP\src\modules\samplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\samplers\TriggeredGrain.cpp">
-      <Filter>addons\ofxPDSP\src\modules\samplers</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\signal\LinearCrossfader.cpp">
-      <Filter>addons\ofxPDSP\src\modules\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\signal\Panner.cpp">
-      <Filter>addons\ofxPDSP\src\modules\signal</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\sources\BitNoise.cpp">
-      <Filter>addons\ofxPDSP\src\modules\sources</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ComputerKeyboard.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Engine.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiControls.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiIn.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiKeys.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiOut.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiPads.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ofxPDSPFunctions.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\OscInput.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\OscOutput.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Parameter.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ParameterAmp.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ParameterGain.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\SampleBufferPlotter.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Scope.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\SerialOut.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Wrapper.cpp">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\EngineGraphics.cpp">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\MidiCCBuffers.cpp">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\MidiKeysBuffers.cpp">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\SequencerSectionPlotter.cpp">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\Sequence.cpp">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerMessage.cpp">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerProcessor.cpp">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerSection.cpp">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\stockBehaviors.cpp">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClCompile>
-    <ClCompile Include="$(OF_ROOT)\addons\ofxPDSP\libs\audiofft\AudioFFT.cpp">
-      <Filter>addons\ofxPDSP\libs\audiofft</Filter>
+    <ClCompile Include="..\..\..\addons\ofxAudioFile\src\ofxAudioFile.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\BaseEngine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\CorporateGreyTheme.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\DefaultTheme.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineGLFW.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineOpenGLES.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\EngineVk.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\Gui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\Helpers.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxImGui\src\ofxImGuiLoggerChannel.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiIn.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiOut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxBaseMidi.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidi.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiClock.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiIn.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiMessage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiOut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxMidi\src\ofxMidiTimecode.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix\UdpSocket.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOsc\src\ofxOscSender.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\libs\audiofft\AudioFFT.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerBridge.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerGateOutput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerValueOutput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\ToGateTrigger.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\TriggerControl.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\TriggerGeiger.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\control\ValueControl.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\convolution\FDLConvolver.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\Amp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\BasicNodes.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\BufferShell.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\ExternalInput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\Formula.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\leftSum.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\operators.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\PatchNode.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\Preparable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\Processor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\core\Switch.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\delays\AllPassDelay.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\delays\Delay.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\delays\SRDelay.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\AbsoluteValue.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\EnvelopeFollower.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\GainComputer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\LHDelay.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\PositiveValue.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\RMSDetector.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\SquarePeakDetector.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\ADSR.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\AHR.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\EnvelopeStage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\APF1.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\APF4.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadBase.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHighShelf.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHPF2.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLowShelf.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLPF2.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadPeakEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\MultiLadder4.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\OnePole.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\filters\SVF2.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\helpers\FFTWorker.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\helpers\UsesSlew.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEPSaw.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPBased.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPTable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\DPWTri.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\base\Oscillator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\base\OscillatorVariShape.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapPulse.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSaw.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapTri.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\fm\SineFB.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\ClockedPhasor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\LFOPhasor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\PhasorShifter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\PMPhasor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataOsc.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataTable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTableOsc.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\random\TriggeredRandom.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\random\WhiteNoise.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\BandLimit.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\DownSampler.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\IIRDownSampler2x.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\IIRUpSampler2x.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\UpSampler.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\ZeroDownSampler.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\ZeroUpSampler.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\GrainWindow.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\grain\GrainBased.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\grain\GrainTable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\SampleBuffer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\Sampler.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Bitcruncher.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Decimator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\SampleAndHold.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Saturator1.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Saturator2.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\signal\SoftClip.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\BipolarToUnipolar.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\DBtoLin.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\FreqToMs.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\LinToDB.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\MaxValue.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\OneBarTimeMs.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\OneMinusInput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\PitchToFreq.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\DSP\utility\SamplesDelay.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\incrementCalculator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\sanity_check.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\random\random.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\simd\core\activate.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\simd\core\allocator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\tables\blep.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\math\tables\dsp_windows.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\messages\Clockable.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\messages\MessageBuffer.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\dynamics\Compressor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\dynamics\Ducker.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\effects\DimensionChorus.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AAHighShelfEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AALowShelfEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AAPeakEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\HighCut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\HighShelfEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\LowCut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\LowShelfEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\PeakEQ.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\filters\CombFilter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\filters\PhaserFilter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\filters\SVFilter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\filters\VAFilter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\ADSR_OSC.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\ClockedLFO.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\DataOscillator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\FMOperator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\LFO.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\TableOscillator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\VAOscillator.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\reverbs\BasiVerb.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\reverbs\IRVerb.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\samplers\GrainCloud.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\samplers\TriggeredGrain.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\signal\LinearCrossfader.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\signal\Panner.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\modules\sources\BitNoise.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\ComputerKeyboard.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\Engine.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\helper\EngineGraphics.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\helper\MidiCCBuffers.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\helper\MidiKeysBuffers.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\helper\SequencerSectionPlotter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\MidiControls.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\MidiIn.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\MidiKeys.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\MidiOut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\MidiPads.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\ofxPDSPFunctions.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\OscInput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\OscOutput.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\Parameter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\ParameterAmp.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\ParameterGain.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\SampleBufferPlotter.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\Scope.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\SerialOut.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\ofx\Wrapper.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\sequencer\Sequence.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerMessage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerProcessor.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerSection.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxPDSP\src\sequencer\stockBehaviors.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="..\src\patch\PatchFilesStore.cpp">
+      <Filter>addons\ofxPDSPTools\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\patch\PatchParams.cpp">
+      <Filter>addons\ofxPDSPTools\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\oscWaveSelectDetune.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\SubstractiveSynth.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\SubstractiveSynthParams.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\SubstractiveVoice.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\SynthA.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\SynthBase.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\VEOscADSRFilter.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\VEOscLFO.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\VESingleOSC.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\VoiceBase.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\VoiceElement.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\synth\voiceFullFeatures.cpp">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ui\ofxImGuiLoadSavePatchs.cpp">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ui\ofxImGuiMIDIDevicesSelector.cpp">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ui\ofxImGuiPatchParamsUI.cpp">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ui\PatchParamsLayout.cpp">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ui\PatchParamsOfxImGui.cpp">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -864,937 +521,391 @@
     <Filter Include="addons\ofxPDSP\libs\audiofft">
       <UniqueIdentifier>{beaa0d59-bef1-4e8a-a765-8e802a321b96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="addons\ofxPDSPTools">
+      <UniqueIdentifier>{0499ab59-ef04-4a72-9b55-dbca7a530ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPDSPTools\ui">
+      <UniqueIdentifier>{6761375d-06b9-42ce-be3d-abb417d868b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPDSPTools\patch">
+      <UniqueIdentifier>{0ef7919b-5aad-4aea-a65e-d09ec1cd804f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxPDSPTools\synth">
+      <UniqueIdentifier>{4f24f207-fd0e-4daa-b410-6f6325148604}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOsc.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscArg.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscBundle.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscMessage.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscParameterSync.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscReceiver.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\src\ofxOscSender.h">
-      <Filter>addons\ofxOsc\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscException.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
-      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxXmlSettings\src\ofxXmlSettings.h">
-      <Filter>addons\ofxXmlSettings\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxXmlSettings\libs\tinyxml.h">
-      <Filter>addons\ofxXmlSettings\libs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxAudioFile\src\ofxAudioFile.h">
-      <Filter>addons\ofxAudioFile\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxAudioFile\libs\dr_flac.h">
-      <Filter>addons\ofxAudioFile\libs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxAudioFile\libs\dr_mp3.h">
-      <Filter>addons\ofxAudioFile\libs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxAudioFile\libs\dr_wav.h">
-      <Filter>addons\ofxAudioFile\libs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxAudioFile\libs\stb_vorbis.h">
-      <Filter>addons\ofxAudioFile\libs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\BaseEngine.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\BaseTheme.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\CorporateGreyTheme.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\DefaultTheme.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\EngineGLFW.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\EngineOpenGLES.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\EngineVk.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\Gui.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\Helpers.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\imconfig.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\ofxImGui.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\src\ofxImGuiLoggerChannel.h">
-      <Filter>addons\ofxImGui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui.h">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imgui_internal.h">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imstb_rectpack.h">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imstb_textedit.h">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxImGui\libs\imgui\src\imstb_truetype.h">
-      <Filter>addons\ofxImGui\libs\imgui\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxBaseMidi.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidi.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiClock.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiConstants.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiIn.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiMessage.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiOut.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiTimecode.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ofxMidiTypes.h">
-      <Filter>addons\ofxMidi\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\desktop\ofxRtMidiIn.h">
-      <Filter>addons\ofxMidi\src\desktop</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\desktop\ofxRtMidiOut.h">
-      <Filter>addons\ofxMidi\src\desktop</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ios\ofxPGMidiContext.h">
-      <Filter>addons\ofxMidi\src\ios</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ios\ofxPGMidiDelegate.h">
-      <Filter>addons\ofxMidi\src\ios</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ios\ofxPGMidiIn.h">
-      <Filter>addons\ofxMidi\src\ios</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ios\ofxPGMidiOut.h">
-      <Filter>addons\ofxMidi\src\ios</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\src\ios\ofxPGMidiSourceDelegate.h">
-      <Filter>addons\ofxMidi\src\ios</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\pgmidi\iOSVersionDetection.h">
-      <Filter>addons\ofxMidi\libs\pgmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\pgmidi\PGArc.h">
-      <Filter>addons\ofxMidi\libs\pgmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\pgmidi\PGMidi.h">
-      <Filter>addons\ofxMidi\libs\pgmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\pgmidi\PGMidiAllSources.h">
-      <Filter>addons\ofxMidi\libs\pgmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\pgmidi\PGMidiFind.h">
-      <Filter>addons\ofxMidi\libs\pgmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxMidi\libs\rtmidi\RtMidi.h">
-      <Filter>addons\ofxMidi\libs\rtmidi</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\flags.h">
-      <Filter>addons\ofxPDSP\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofxPDSP.h">
-      <Filter>addons\ofxPDSP\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofxPDSPLegacy.h">
-      <Filter>addons\ofxPDSP\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\types.h">
-      <Filter>addons\ofxPDSP\src</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\header.h">
-      <Filter>addons\ofxPDSP\src\DSP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\pdspConstants.h">
-      <Filter>addons\ofxPDSP\src\DSP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\pdspCore.h">
-      <Filter>addons\ofxPDSP\src\DSP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\pdspFunctions.h">
-      <Filter>addons\ofxPDSP\src\DSP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerBridge.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerGateOutput.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\SequencerValueOutput.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\ToGateTrigger.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\TriggerControl.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\TriggerGeiger.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\control\ValueControl.h">
-      <Filter>addons\ofxPDSP\src\DSP\control</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\convolution\FDLConvolver.h">
-      <Filter>addons\ofxPDSP\src\DSP\convolution</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Amp.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\BasicNodes.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\BufferShell.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\ExternalInput.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Formula.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\leftSum.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\operators.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\PatchNode.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Preparable.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Processor.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\core\Switch.h">
-      <Filter>addons\ofxPDSP\src\DSP\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\AllPassDelay.h">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\Delay.h">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\delays\SRDelay.h">
-      <Filter>addons\ofxPDSP\src\DSP\delays</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\AbsoluteValue.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\EnvelopeFollower.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\GainComputer.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\LHDelay.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\PositiveValue.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\RMSDetector.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\dynamics\SquarePeakDetector.h">
-      <Filter>addons\ofxPDSP\src\DSP\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\ADSR.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\AHR.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\AttackStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\DecayStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\EnvelopeStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\HoldStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\ReleaseStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\RiseStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\envelopes\stages\SustainStage.h">
-      <Filter>addons\ofxPDSP\src\DSP\envelopes\stages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\APF1.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\APF4.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\MultiLadder4.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\OnePole.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\SVF2.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadBase.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHighShelf.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHPF2.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLowShelf.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLPF2.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\filters\biquads\BiquadPeakEQ.h">
-      <Filter>addons\ofxPDSP\src\DSP\filters\biquads</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\helpers\FFTWorker.h">
-      <Filter>addons\ofxPDSP\src\DSP\helpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\helpers\UsesSlew.h">
-      <Filter>addons\ofxPDSP\src\DSP\helpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEPSaw.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\DPWTri.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPBased.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPFunc.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPTable.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\base\Oscillator.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\base</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\base\OscillatorVariShape.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\base</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapPulse.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSaw.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSine.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapTri.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\cheap</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\fm\SineFB.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\fm</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\ClockedPhasor.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\LFOPhasor.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\PhasorShifter.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\phasors\PMPhasor.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\phasors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataOsc.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataTable.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTable.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTableOsc.h">
-      <Filter>addons\ofxPDSP\src\DSP\oscillators\wavetable</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\random\TriggeredRandom.h">
-      <Filter>addons\ofxPDSP\src\DSP\random</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\random\WhiteNoise.h">
-      <Filter>addons\ofxPDSP\src\DSP\random</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\BandLimit.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\DownSampler.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\IIRDownSampler2x.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\IIRUpSampler2x.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\resamplers.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\UpSampler.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\ZeroDownSampler.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\resamplers\ZeroUpSampler.h">
-      <Filter>addons\ofxPDSP\src\DSP\resamplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\GrainWindow.h">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\SampleBuffer.h">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\Sampler.h">
-      <Filter>addons\ofxPDSP\src\DSP\samplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\grain\GrainBased.h">
-      <Filter>addons\ofxPDSP\src\DSP\samplers\grain</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\samplers\grain\GrainTable.h">
-      <Filter>addons\ofxPDSP\src\DSP\samplers\grain</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Bitcruncher.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Decimator.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\SampleAndHold.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Saturator1.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\Saturator2.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\signal\SoftClip.h">
-      <Filter>addons\ofxPDSP\src\DSP\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\BipolarToUnipolar.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\DBtoLin.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\FreqToMs.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\LinToDB.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\MaxValue.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\OneBarTimeMs.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\OneMinusInput.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\PitchToFreq.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\DSP\utility\SamplesDelay.h">
-      <Filter>addons\ofxPDSP\src\DSP\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\functions.h">
-      <Filter>addons\ofxPDSP\src\math</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\header.h">
-      <Filter>addons\ofxPDSP\src\math</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\calculateGainReduction.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\genPulse.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\genSaw.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\genTriangle.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\incrementCalculator.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\nonlinear1.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\phazorShifter.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\sanity_check.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\dsphelpers\warpCutoff.h">
-      <Filter>addons\ofxPDSP\src\math\dsphelpers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\fft\complex_mult_add.h">
-      <Filter>addons\ofxPDSP\src\math\fft</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\fft\include_audiofft.h">
-      <Filter>addons\ofxPDSP\src\math\fft</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\interpolation\cosine.h">
-      <Filter>addons\ofxPDSP\src\math\interpolation</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\interpolation\hermite.h">
-      <Filter>addons\ofxPDSP\src\math\interpolation</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\interpolation\linear.h">
-      <Filter>addons\ofxPDSP\src\math\interpolation</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\interpolation\smooth.h">
-      <Filter>addons\ofxPDSP\src\math\interpolation</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\random\random.h">
-      <Filter>addons\ofxPDSP\src\math\random</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions.h">
-      <Filter>addons\ofxPDSP\src\math\simd</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\header.h">
-      <Filter>addons\ofxPDSP\src\math\simd</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\activate.h">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\allocator.h">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\flags.h">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\core\inlines.h">
-      <Filter>addons\ofxPDSP\src\math\simd\core</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\floor.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\mathfun.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\simd_wrapper.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\ternaryOp.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\mathfun\mathfun_NEON.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions\mathfun</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\functions\mathfun\mathfun_SSE2.h">
-      <Filter>addons\ofxPDSP\src\math\simd\functions\mathfun</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\inline_logSB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\inline_powSB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\inline_ramp.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_1divB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_absB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_B.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BaddC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BaddS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_Badd_CmulS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BdivC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BmulC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BmulS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BsubC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_BsubS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_clipB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_cosB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_expB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_floorB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_logB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_maxBC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_maxBS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_minBC.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_minBS.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_negB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_S.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_sinB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_sqrtB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_SsubB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_tanB.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\kernels\kernel_Zero.h">
-      <Filter>addons\ofxPDSP\src\math\simd\kernels</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\vectors\vect_ops.h">
-      <Filter>addons\ofxPDSP\src\math\simd\vectors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\simd\vectors\vect_transform.h">
-      <Filter>addons\ofxPDSP\src\math\simd\vectors</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\tables\blep.h">
-      <Filter>addons\ofxPDSP\src\math\tables</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\tables\dsp_windows.h">
-      <Filter>addons\ofxPDSP\src\math\tables</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\trig\fastcos.h">
-      <Filter>addons\ofxPDSP\src\math\trig</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\trig\fastsin.h">
-      <Filter>addons\ofxPDSP\src\math\trig</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\trig\fasttan.h">
-      <Filter>addons\ofxPDSP\src\math\trig</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\math\trig\fasttanh.h">
-      <Filter>addons\ofxPDSP\src\math\trig</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\Clockable.h">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\ExtSequencer.h">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\header.h">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\Message.h">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\messages\MessageBuffer.h">
-      <Filter>addons\ofxPDSP\src\messages</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\header.h">
-      <Filter>addons\ofxPDSP\src\modules</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\dynamics\Compressor.h">
-      <Filter>addons\ofxPDSP\src\modules\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\dynamics\Ducker.h">
-      <Filter>addons\ofxPDSP\src\modules\dynamics</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\effects\DimensionChorus.h">
-      <Filter>addons\ofxPDSP\src\modules\effects</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AAHighShelfEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AALowShelfEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\AAPeakEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\HighCut.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\HighShelfEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\LowCut.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\LowShelfEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\equalizers\PeakEQ.h">
-      <Filter>addons\ofxPDSP\src\modules\equalizers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\CombFilter.h">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\PhaserFilter.h">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\SVFilter.h">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\filters\VAFilter.h">
-      <Filter>addons\ofxPDSP\src\modules\filters</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\ADSR_OSC.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\ClockedLFO.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\DataOscillator.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\FMOperator.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\LFO.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\TableOscillator.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\oscillators\VAOscillator.h">
-      <Filter>addons\ofxPDSP\src\modules\oscillators</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\reverbs\BasiVerb.h">
-      <Filter>addons\ofxPDSP\src\modules\reverbs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\reverbs\IRVerb.h">
-      <Filter>addons\ofxPDSP\src\modules\reverbs</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\samplers\GrainCloud.h">
-      <Filter>addons\ofxPDSP\src\modules\samplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\samplers\TriggeredGrain.h">
-      <Filter>addons\ofxPDSP\src\modules\samplers</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\signal\LinearCrossfader.h">
-      <Filter>addons\ofxPDSP\src\modules\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\signal\Panner.h">
-      <Filter>addons\ofxPDSP\src\modules\signal</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\modules\sources\BitNoise.h">
-      <Filter>addons\ofxPDSP\src\modules\sources</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ComputerKeyboard.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Engine.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Midi.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiControls.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiIn.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiKeys.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiOut.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\MidiPads.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ofxPDSPFunctions.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\OscInput.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\OscOutput.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Parameter.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ParameterAmp.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\ParameterGain.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\SampleBufferPlotter.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Scope.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\SerialOut.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\Wrapper.h">
-      <Filter>addons\ofxPDSP\src\ofx</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\Controller.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\EngineGraphics.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\MidiCCBuffers.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\MidiKeysBuffers.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\PositionedMidiMessage.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\ofx\helper\SequencerSectionPlotter.h">
-      <Filter>addons\ofxPDSP\src\ofx\helper</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\header.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\Sequence.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerMessage.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerProcessor.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\SequencerSection.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\src\sequencer\stockBehaviors.h">
-      <Filter>addons\ofxPDSP\src\sequencer</Filter>
-    </ClInclude>
-    <ClInclude Include="$(OF_ROOT)\addons\ofxPDSP\libs\audiofft\AudioFFT.h">
-      <Filter>addons\ofxPDSP\libs\audiofft</Filter>
+    <ClInclude Include="..\..\..\addons\ofxAudioFile\libs\dr_flac.h" />
+    <ClInclude Include="..\..\..\addons\ofxAudioFile\libs\dr_mp3.h" />
+    <ClInclude Include="..\..\..\addons\ofxAudioFile\libs\dr_wav.h" />
+    <ClInclude Include="..\..\..\addons\ofxAudioFile\libs\stb_vorbis.h" />
+    <ClInclude Include="..\..\..\addons\ofxAudioFile\src\ofxAudioFile.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imgui_internal.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_rectpack.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_textedit.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\libs\imgui\src\imstb_truetype.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\BaseEngine.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\BaseTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\CorporateGreyTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\DefaultTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineGLFW.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineOpenGLES.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\EngineVk.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\Gui.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\Helpers.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\imconfig.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\ofxImGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxImGui\src\ofxImGuiLoggerChannel.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\pgmidi\iOSVersionDetection.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\pgmidi\PGArc.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\pgmidi\PGMidi.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\pgmidi\PGMidiAllSources.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\pgmidi\PGMidiFind.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\libs\rtmidi\RtMidi.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiIn.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\desktop\ofxRtMidiOut.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ios\ofxPGMidiContext.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ios\ofxPGMidiDelegate.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ios\ofxPGMidiIn.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ios\ofxPGMidiOut.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ios\ofxPGMidiSourceDelegate.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxBaseMidi.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidi.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiClock.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiIn.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiMessage.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiOut.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiTimecode.h" />
+    <ClInclude Include="..\..\..\addons\ofxMidi\src\ofxMidiTypes.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\TimerListener.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscException.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\libs\oscpack\src\osc\OscTypes.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOsc.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscArg.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscBundle.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscMessage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscParameterSync.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscReceiver.h" />
+    <ClInclude Include="..\..\..\addons\ofxOsc\src\ofxOscSender.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\libs\audiofft\AudioFFT.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerBridge.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerGateOutput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\SequencerValueOutput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\ToGateTrigger.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\TriggerControl.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\TriggerGeiger.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\control\ValueControl.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\convolution\FDLConvolver.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\Amp.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\BasicNodes.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\BufferShell.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\ExternalInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\Formula.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\leftSum.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\operators.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\PatchNode.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\Preparable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\Processor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\core\Switch.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\delays\AllPassDelay.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\delays\Delay.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\delays\SRDelay.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\AbsoluteValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\EnvelopeFollower.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\GainComputer.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\LHDelay.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\PositiveValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\RMSDetector.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\dynamics\SquarePeakDetector.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\ADSR.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\AHR.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\AttackStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\DecayStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\EnvelopeStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\HoldStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\ReleaseStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\RiseStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\envelopes\stages\SustainStage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\APF1.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\APF4.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadBase.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHighShelf.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadHPF2.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLowShelf.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadLPF2.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\biquads\BiquadPeakEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\MultiLadder4.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\OnePole.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\filters\SVF2.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\helpers\FFTWorker.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\helpers\UsesSlew.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEPSaw.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPBased.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPFunc.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\BLEP\BLEPTable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\antialiased\DPWTri.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\base\Oscillator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\base\OscillatorVariShape.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapPulse.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSaw.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapSine.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\cheap\CheapTri.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\fm\SineFB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\ClockedPhasor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\LFOPhasor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\PhasorShifter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\phasors\PMPhasor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataOsc.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\DataTable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\oscillators\wavetable\WaveTableOsc.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\pdspConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\pdspCore.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\pdspFunctions.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\random\TriggeredRandom.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\random\WhiteNoise.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\BandLimit.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\DownSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\IIRDownSampler2x.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\IIRUpSampler2x.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\resamplers.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\UpSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\ZeroDownSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\resamplers\ZeroUpSampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\GrainWindow.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\grain\GrainBased.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\grain\GrainTable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\SampleBuffer.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\samplers\Sampler.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Bitcruncher.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Decimator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\SampleAndHold.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Saturator1.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\Saturator2.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\signal\SoftClip.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\BipolarToUnipolar.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\DBtoLin.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\FreqToMs.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\LinToDB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\MaxValue.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\OneBarTimeMs.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\OneMinusInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\PitchToFreq.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\DSP\utility\SamplesDelay.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\flags.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\calculateGainReduction.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\genPulse.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\genSaw.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\genTriangle.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\incrementCalculator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\nonlinear1.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\phazorShifter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\sanity_check.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\dsphelpers\warpCutoff.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\fft\complex_mult_add.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\fft\include_audiofft.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\functions.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\interpolation\cosine.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\interpolation\hermite.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\interpolation\linear.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\interpolation\smooth.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\random\random.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\core\activate.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\core\allocator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\core\flags.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\core\inlines.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\floor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\mathfun.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\mathfun\mathfun_NEON.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\mathfun\mathfun_SSE2.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\simd_wrapper.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\functions\ternaryOp.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\inline_logSB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\inline_powSB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\inline_ramp.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_1divB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_absB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_B.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BaddC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BaddS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_Badd_CmulS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BdivC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BmulC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BmulS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BsubC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_BsubS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_clipB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_cosB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_expB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_floorB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_logB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_maxBC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_maxBS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_minBC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_minBS.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_negB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_S.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_sinB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_sqrtB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_SsubB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_tanB.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\kernels\kernel_Zero.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\vectors\vect_ops.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\simd\vectors\vect_transform.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\tables\blep.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\tables\dsp_windows.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\trig\fastcos.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\trig\fastsin.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\trig\fasttan.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\math\trig\fasttanh.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\messages\Clockable.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\messages\ExtSequencer.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\messages\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\messages\Message.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\messages\MessageBuffer.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\dynamics\Compressor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\dynamics\Ducker.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\effects\DimensionChorus.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AAHighShelfEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AALowShelfEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\AAPeakEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\HighCut.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\HighShelfEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\LowCut.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\LowShelfEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\equalizers\PeakEQ.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\filters\CombFilter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\filters\PhaserFilter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\filters\SVFilter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\filters\VAFilter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\ADSR_OSC.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\ClockedLFO.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\DataOscillator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\FMOperator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\LFO.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\TableOscillator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\oscillators\VAOscillator.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\reverbs\BasiVerb.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\reverbs\IRVerb.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\samplers\GrainCloud.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\samplers\TriggeredGrain.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\signal\LinearCrossfader.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\signal\Panner.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\modules\sources\BitNoise.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofxPDSP.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofxPDSPLegacy.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\ComputerKeyboard.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\Engine.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\Controller.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\EngineGraphics.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\MidiCCBuffers.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\MidiKeysBuffers.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\PositionedMidiMessage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\helper\SequencerSectionPlotter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\Midi.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\MidiControls.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\MidiIn.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\MidiKeys.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\MidiOut.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\MidiPads.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\ofxPDSPFunctions.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\OscInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\OscOutput.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\Parameter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\ParameterAmp.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\ParameterGain.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\SampleBufferPlotter.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\Scope.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\SerialOut.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\ofx\Wrapper.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\header.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\Sequence.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerMessage.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerProcessor.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\SequencerSection.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\sequencer\stockBehaviors.h" />
+    <ClInclude Include="..\..\..\addons\ofxPDSP\src\types.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="..\src\ofxPDSPTools.h">
+      <Filter>addons\ofxPDSPTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\patch\PatchFilesStore.h">
+      <Filter>addons\ofxPDSPTools\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\patch\PatchParams.h">
+      <Filter>addons\ofxPDSPTools\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\oscWaveSelectDetune.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\SubstractiveSynth.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\SubstractiveSynthParams.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\SubstractiveVoice.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\SynthA.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\SynthBase.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\VEOscADSRFilter.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\VEOscLFO.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\VESingleOSC.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\VoiceBase.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\VoiceElement.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\synth\voiceFullFeatures.h">
+      <Filter>addons\ofxPDSPTools\synth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ui\ofxImGuiLoadSavePatchs.h">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ui\ofxImGuiMIDIDevicesSelector.h">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ui\ofxImGuiPatchParamsUI.h">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ui\PatchParamsLayout.h">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ui\PatchParamsOfxImGui.h">
+      <Filter>addons\ofxPDSPTools\ui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

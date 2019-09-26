@@ -190,10 +190,6 @@ void ofApp::setup(){
 	}
 	
 
-	/*44.0f >> osc.in_pitch();
-	osc.signal() >> engine.audio_out(0);
-	osc.signal() >> engine.audio_out(1);*/
-
 	pp.patch("synth.level") >> synth.in("level");
 	pp.patch("synth.filter.type") >> synth.in("filter.type");
 	pp.patch("synth.filter.cutoff") >> synth.in("filter.cutoff");
@@ -218,9 +214,6 @@ void ofApp::setup(){
 	patchParamUI.setPatchParams(pp);
 	patchSaveLoadUI.setPatchParams(&pp);
 
-	
-
-	//patchStore.save("toto", *(pp.getOfParameterGroup()));
 }
 
 //--------------------------------------------------------------

@@ -94,8 +94,6 @@ And UI components to setup synth, select MIDI output and load/save patches.
 
 # To Do
 
-Select a licence.
-
 Not clear yet, but the idea is to create a track object to which I could bind a synth and FXs.
 All build using ofxPDS sequencer system.
 

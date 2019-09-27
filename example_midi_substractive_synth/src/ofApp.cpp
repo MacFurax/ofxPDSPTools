@@ -3,7 +3,8 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-	ofSetWindowShape(1600, 800);
+	ofSetWindowShape(1400, 800);
+	ofSetWindowTitle("Substractive Synth");
 
 	gui.setup();
 

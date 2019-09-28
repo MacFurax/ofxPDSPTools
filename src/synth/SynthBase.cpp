@@ -4,6 +4,7 @@ SynthBase::SynthBase()
 {
 	ofLogNotice() << "SynthBase::SynthBase";
 	addModuleInput("level", outSignal.in_mod()); // first = default
+	addModuleInput("modulation", modulation); // first = default
 
 	addModuleOutput("signal", outSignal); // first = default
 }

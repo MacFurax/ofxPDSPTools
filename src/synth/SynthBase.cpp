@@ -21,5 +21,6 @@ std::vector<VoiceBase*> SynthBase::getVoices()
 void SynthBase::addVoice(VoiceBase* voice)
 {
 	voices.push_back(voice);
+	modulation >> voice->in_modulation();
 	voice->out_signal() >> outSignal;
 }

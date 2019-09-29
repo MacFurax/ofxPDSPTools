@@ -28,6 +28,7 @@ void VoiceBase::addElement(VoiceElement* element)
 
 	trigger >> element->in_trig();
 	pitch >> element->in_pitch();
+	modulation >> element->in_modulation();
 
 	element->out_signal() >> outSignal;
 }

@@ -10,6 +10,12 @@ SynthA::SynthA()
 	addModuleInput("filter.lfo.freq", filterLFO.in_freq());
 	addModuleInput("filter.lfo.cutoff", lfoToCutOff.in_mod());
 
+	addModuleInput("filter.modulation.reso", modulationToReso.in_mod());
+	addModuleInput("filter.modulation.lfo freq", modulationToLFOFreq.in_mod());
+
+	modulationToReso.set(0.0f);
+	modulationToLFOFreq.set(0.0f);
+
 	// Patch
 	filterLFOType.resize(4);
 
@@ -19,6 +25,9 @@ SynthA::SynthA()
 	filterLFO.out_square() >> filterLFOType.input(3);
 
 	filterLFOType >> lfoToCutOff >> filter.in_cutoff();
+
+	modulation >> modulationToReso >> filter.in_reso();
+	modulation >> modulationToLFOFreq >> filterLFO.in_freq();
 }
 
 SynthA::~SynthA()

@@ -28,10 +28,12 @@ public:
 	pdsp::Patchable & in_trig();
 	pdsp::Patchable & in_pitch();
 	pdsp::Patchable & in_level();
+	pdsp::Patchable & in_modulation();
 
 protected:
 	pdsp::PatchNode trigger;
 	pdsp::PatchNode pitch;
+	pdsp::PatchNode modulation;
 
 	pdsp::Amp		outSignal;
 };

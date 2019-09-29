@@ -7,6 +7,7 @@ VoiceElement::VoiceElement()
 	addModuleInput("level", outSignal.in_mod()); // first = default
 	addModuleInput("trigger", trigger); 
 	addModuleInput("pitch", pitch);
+	addModuleInput("modulation", modulation);
 	
 	addModuleOutput("signal", outSignal); // first = default
 }
@@ -33,4 +34,9 @@ pdsp::Patchable & VoiceElement::in_pitch()
 pdsp::Patchable & VoiceElement::in_level()
 {
 	return outSignal.in_mod();
+}
+
+pdsp::Patchable & VoiceElement::in_modulation()
+{
+	return modulation;
 }

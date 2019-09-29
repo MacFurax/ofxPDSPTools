@@ -7,6 +7,7 @@ VoiceBase::VoiceBase()
 	addModuleInput("level", outSignal.in_mod()); // first = default
 	addModuleInput("trigger", trigger); 
 	addModuleInput("pitch", pitch);
+	addModuleInput("modulation", modulation);
 
 	addModuleOutput("signal", outSignal); // first = default
 
@@ -49,6 +50,11 @@ pdsp::Patchable & VoiceBase::in_trig()
 pdsp::Patchable & VoiceBase::in_pitch()
 {
 	return pitch;
+}
+
+pdsp::Patchable & VoiceBase::in_modulation()
+{
+	return modulation;
 }
 
 pdsp::Patchable & VoiceBase::out_signal()

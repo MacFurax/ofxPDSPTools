@@ -11,6 +11,7 @@ public:
 	~SynthBase();
 
 	void virtual setup(int voiceCount) {}
+	pdsp::Patchable & in_modulation();
 
 	std::vector<VoiceBase*> getVoices();
 

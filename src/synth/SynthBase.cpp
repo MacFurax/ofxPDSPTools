@@ -13,6 +13,11 @@ SynthBase::~SynthBase()
 {
 }
 
+pdsp::Patchable & SynthBase::in_modulation()
+{
+	return modulation;
+}
+
 std::vector<VoiceBase*> SynthBase::getVoices()
 {
 	return voices;

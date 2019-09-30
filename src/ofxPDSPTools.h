@@ -13,6 +13,7 @@
 #include "ofxImGuiPatchParamsUI.h"
 #include "ofxImGuiLoadSavePatchs.h"
 #include "ofxImGuiMIDIDevicesSelector.h"
+#include "ofxImGuiAudioMidiSettings.h"
 
 
 

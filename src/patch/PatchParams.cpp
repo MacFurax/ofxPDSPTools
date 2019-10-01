@@ -24,6 +24,12 @@ PatchParams::~PatchParams()
 // -------------------------------------------------------
 void PatchParams::AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime, ParamLayouts layout, ParamWidgets widget)
 {
+	AddParam(fullname, value, minValue, maxValue, minValue, smoothingTime, layout, widget);
+}
+
+// -------------------------------------------------------
+void PatchParams::AddParam(string fullname, float value, float minValue, float maxValue, float zeroRef, float smoothingTime, ParamLayouts layout, ParamWidgets widget)
+{
 	vector<string> names;
 	names = ofSplitString(fullname, ".");
 
@@ -49,6 +55,7 @@ void PatchParams::AddParam(string fullname, float value, float minValue, float m
 			paramDesc->layout = layout;
 			paramDesc->type = ParamTypes::Float;
 			paramDesc->widget = widget;
+			paramDesc->zeroRef = zeroRef;
 
 			_paramDescs[fullname] = paramDesc;
 			lastGroup->getParams().push_back(paramDesc);

@@ -18,6 +18,7 @@ public:
   ParamWidgets					widget = ParamWidgets::HSlider;
   ParamLayouts					layout = ParamLayouts::NextLine;
   vector<string>				comboOptions; // if paramType is StringList
+  float							zeroRef; // centre value reference
 };
 
 
@@ -48,6 +49,7 @@ public:
   ~PatchParams();
 
   void AddParam(string fullname, float value, float minValue, float maxValue, float smoothingTime = 50.f, ParamLayouts layout = ParamLayouts::NextLine, ParamWidgets widget = ParamWidgets::Knob);
+  void AddParam(string fullname, float value, float minValue, float maxValue, float zeroRef, float smoothingTime = 50.f, ParamLayouts layout = ParamLayouts::NextLine, ParamWidgets widget = ParamWidgets::Knob);
   void AddParam(string fullname, int value, vector<string> options, float smoothingTime = 50.f, ParamLayouts layout = ParamLayouts::NextLine, ParamWidgets widget = ParamWidgets::Combo);
   
   const string & getName();

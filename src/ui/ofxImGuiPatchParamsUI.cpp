@@ -54,7 +54,8 @@ void ofxImGuiPatchParamsUI::drawParams(vector<shared_ptr<ParamDesc>> & params)
 
 		case ParamWidgets::Knob:
 			ofxImGui::AddKnob(
-				param->pdspParameter->getOFParameterFloat()
+				param->pdspParameter->getOFParameterFloat(),
+				param->zeroRef
 			);
 			break;
 

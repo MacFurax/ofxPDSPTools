@@ -251,7 +251,12 @@ shared_ptr<pdsp::Parameter> PatchParams::getPDSPParameter(string fullname)
 // -------------------------------------------------------
 pdsp::Parameter & PatchParams::patch(string fullname)
 {
-	return *(getPDSPParameter(fullname));
+	shared_ptr<pdsp::Parameter> p = getPDSPParameter(fullname);
+	if (p == nullptr)
+	{
+		ofLogFatalError() << "No param called ["<< fullname <<"]";
+	}
+	return *(p);
 }
 
 string & ParamGroup::getName()

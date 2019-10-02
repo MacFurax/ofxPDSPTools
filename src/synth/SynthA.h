@@ -22,6 +22,7 @@ private:
 	pdsp::Switch	filterLFOType;
 	pdsp::Amp		lfoToCutOff;
 	pdsp::Amp		modulationToReso;
+	pdsp::Amp		modulationToCutoff;
 	pdsp::Amp		modulationToLFOFreq;
 
 };

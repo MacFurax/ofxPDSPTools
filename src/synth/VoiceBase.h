@@ -30,6 +30,7 @@ public:
 	*/
 	void addElement(VoiceElement* element);
 	VoiceElement* getVoiceElementAt( int index);
+	int getElementCount();
 
 	pdsp::Patchable & in_trig();
 	pdsp::Patchable & in_pitch();

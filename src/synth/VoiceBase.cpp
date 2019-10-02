@@ -43,6 +43,11 @@ VoiceElement * VoiceBase::getVoiceElementAt(int index)
 	return elements[index];
 }
 
+int VoiceBase::getElementCount()
+{
+	return elements.size();
+}
+
 pdsp::Patchable & VoiceBase::in_trig()
 {
 	return trigger;

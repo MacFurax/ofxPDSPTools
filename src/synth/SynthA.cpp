@@ -45,7 +45,7 @@ void SynthA::setup(int voiceCount)
 		VoiceBase* vb = new VoiceBase(i);
 		vb->addElement(ve);
 		vb->addElement(ve2);
-		vb->out_signal() >> filter >> outSignal;
+		vb->out_signal() * (1.0f/vb->getElementCount()) >> filter >> outSignal;
 		addVoice(vb);
 	}
 

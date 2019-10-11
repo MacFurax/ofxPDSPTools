@@ -43,9 +43,10 @@ void SynthA::setup(int voiceCount)
 		VEOscADSRFilter* ve = new VEOscADSRFilter();
 		VEOscLFO* ve2 = new VEOscLFO();
 		VoiceBase* vb = new VoiceBase(i);
+		vb->setElementCount(2);
 		vb->addElement(ve);
 		vb->addElement(ve2);
-		vb->out_signal() * (1.0f/vb->getElementCount()) >> filter >> outSignal;
+		vb->out_signal() * (1.0f/(float)voiceCount) >> filter >> outSignal;
 		addVoice(vb);
 	}
 

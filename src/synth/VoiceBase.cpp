@@ -22,6 +22,11 @@ VoiceBase::~VoiceBase()
 {
 }
 
+void VoiceBase::setElementCount(int count)
+{
+	elementCount = count;
+}
+
 void VoiceBase::addElement(VoiceElement* element)
 {
 	elements.push_back(element);
@@ -30,7 +35,7 @@ void VoiceBase::addElement(VoiceElement* element)
 	pitch >> element->in_pitch();
 	modulation >> element->in_modulation();
 
-	element->out_signal() >> outSignal;
+	element->out_signal() * (1.0f/(float)elementCount)>> outSignal;
 }
 
 VoiceElement * VoiceBase::getVoiceElementAt(int index)

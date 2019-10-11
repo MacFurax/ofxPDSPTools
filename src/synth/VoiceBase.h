@@ -24,6 +24,7 @@ public:
 	VoiceBase(const VoiceBase & other) {}
 	~VoiceBase();
 
+	void setElementCount(int count);
 	//! Add and patch a VoiceElement to this Voice
 	/*!
 	 Add the VoiceElement and patch trigger, pitch and outSignal.
@@ -39,6 +40,7 @@ public:
 
 protected:
 	int index = 0;
+	int elementCount = 0;
 	std::vector<VoiceElement*> elements;
 
 	pdsp::PatchNode trigger;
